@@ -1,0 +1,96 @@
+[
+  {
+    "year": "2026",
+    "theme": "The Engineering Core",
+    "departments": [
+      {
+        "name": "Management",
+        "members": [
+          {
+            "name": "Jane Management",
+            "role": "Team Captain",
+            "image": "/images/f26.jpg",
+            "linkedin": "https://linkedin.com"
+          }
+        ]
+      },
+      {
+        "name": "Structures and Composites",
+        "members": [
+          {
+            "name": "Jane Structures",
+            "role": "Lead Composites Engineer",
+            "image": "/images/f21.jpg",
+            "linkedin": "#"
+          }
+        ]
+      },
+      {
+        "name": "Vehicle dynamics",
+        "members": [
+          {
+            "name": "Jane Dynamics",
+            "role": "Suspension Lead",
+            "image": "/images/e01.jpg",
+            "linkedin": "#"
+          }
+        ]
+      },
+      {
+        "name": "Aerodynamics",
+        "members": [
+          {
+            "name": "Jane Aero",
+            "role": "Head of Aerodynamics",
+            "image": "/images/f19.jpg",
+            "linkedin": "#"
+          }
+        ]
+      },
+      {
+        "name": "Powertrain",
+        "members": [
+          {
+            "name": "Jane Powertrain",
+            "role": "Chief Powertrain Engineer",
+            "image": "/images/f26.jpg",
+            "linkedin": "#"
+          }
+        ]
+      },
+      {
+        "name": "Electronics",
+        "members": [
+          {
+            "name": "Jane Electronics",
+            "role": "PCB Designer",
+            "image": "/images/f21.jpg",
+            "linkedin": "#"
+          }
+        ]
+      },
+      {
+        "name": "Data Acquisition",
+        "members": [
+          {
+            "name": "Jane Data",
+            "role": "Telemetry Analyst",
+            "image": "/images/e01.jpg",
+            "linkedin": "#"
+          }
+        ]
+      },
+      {
+        "name": "Autonomous",
+        "members": [
+          {
+            "name": "Jane Autonomous",
+            "role": "Perception Engineer",
+            "image": "/images/f19.jpg",
+            "linkedin": "#"
+          }
+        ]
+      }
+    ]
+  }
+]

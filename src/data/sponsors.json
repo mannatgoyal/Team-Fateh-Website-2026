@@ -1,0 +1,126 @@
+{
+    "title": [
+        {
+            "name": "Bhagel Solar Advisors",
+            "description": "Title Sponsor",
+            "website": "#",
+            "logo": "/images/sponsors/bhagel.png"
+        }
+    ],
+    "platinum": [
+        {
+            "name": "COFICAB",
+            "description": "Global leader in automotive wire harnesses and advanced cable solutions for major OEMs.",
+            "website": "https://www.coficab.com",
+            "logo": "/images/sponsors/coficab.png"
+        },
+        {
+            "name": "MME",
+            "description": "Precision manufacturing and engineering solutions provider specializing in high-quality industrial components.",
+            "website": "#",
+            "logo": "/images/sponsors/mme.png"
+        }
+    ],
+    "gold": [
+        {
+            "name": "About:Energy",
+            "description": "Advanced battery simulation and data analytics platform accelerating EV development.",
+            "website": "https://www.aboutenergy.io",
+            "logo": "/images/sponsors/aboutenergy.png"
+        },
+        {
+            "name": "Calspan",
+            "description": "Aerospace and automotive testing services company specializing in vehicle dynamics and wind tunnel testing.",
+            "website": "https://www.calspan.com",
+            "logo": "/images/sponsors/calspan.png"
+        },
+        {
+            "name": "ThreeBond",
+            "description": "Global manufacturer of industrial adhesives, sealants, and chemical solutions.",
+            "website": "https://www.threebond.com",
+            "logo": "/images/sponsors/threebond.png"
+        },
+        {
+            "name": "Bender",
+            "description": "Electrical safety and insulation monitoring systems for EVs and industrial applications.",
+            "website": "https://www.bender.de",
+            "logo": "/images/sponsors/bender.png"
+        },
+        {
+            "name": "Gabriel India",
+            "description": "Leading manufacturer of ride control products including shock absorbers and suspension systems.",
+            "website": "https://www.anandgroupindia.com/gabriel",
+            "logo": "/images/sponsors/gabriel.png"
+        }
+    ],
+    "silver": [
+        {
+            "name": "Global Electronics",
+            "description": "Electronics and embedded systems solutions provider.",
+            "website": "#",
+            "logo": "/images/sponsors/globalelectronics.png"
+        },
+        {
+            "name": "GT",
+            "description": "Engineering solutions and industrial supply provider.",
+            "website": "#",
+            "logo": "/images/sponsors/gt.png"
+        },
+        {
+            "name": "OptimumG",
+            "description": "Vehicle dynamics simulation software used for motorsport and automotive development.",
+            "website": "https://www.optimumg.com",
+            "logo": "/images/sponsors/optimumg.png"
+        },
+        {
+            "name": "Funique Composites",
+            "description": "Advanced composite manufacturing and carbon fiber solutions.",
+            "website": "#",
+            "logo": "/images/sponsors/funique.png"
+        },
+        {
+            "name": "IPG Automotive",
+            "description": "Automotive simulation software (CarMaker) for vehicle development and ADAS testing.",
+            "website": "https://www.ipg-automotive.com",
+            "logo": "/images/sponsors/ipg.png"
+        },
+        {
+            "name": "Dassault Systèmes (SOLIDWORKS)",
+            "description": "3D CAD and product design software provider.",
+            "website": "https://www.solidworks.com",
+            "logo": "/images/sponsors/solidworks.png"
+        },
+        {
+            "name": "Ansys",
+            "description": "Engineering simulation software for CFD, structural, and multiphysics analysis.",
+            "website": "https://www.ansys.com",
+            "logo": "/images/sponsors/ansys.png"
+        },
+        {
+            "name": "Burnout By 3Bothers",
+            "description": "Automotive machining and fabrication services.",
+            "website": "#",
+            "logo": "/images/sponsors/burnout.png"
+        },
+        {
+            "name": "Dhiman Auto Engineering Works",
+            "description": "Automotive machining and fabrication services.",
+            "website": "#",
+            "logo": "/images/sponsors/dhiman.png"
+        },
+        {
+            "name": "SimScale",
+            "description": "Cloud-based engineering simulation platform.",
+            "website": "https://www.simscale.com",
+            "logo": "/images/sponsors/simscale.png"
+        }
+    ],
+    "alumni": [
+        {
+            "name": "Placeholder Name",
+            "batch": "2020",
+            "company": "Placeholder Company",
+            "logo": "/images/sponsors/alumni_placeholder.png"
+        }
+    ]
+}

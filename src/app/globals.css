@@ -1,0 +1,103 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Dark Cyber-Motorsport Base (Default) */
+  --color-background: #0a0a0a;
+  /* Matte Black / Deep Charcoal */
+  --color-foreground: #f8fafc;
+  /* Slate 50 */
+
+  /* McLaren Orange for accents */
+  --color-primary: #ffa51f;
+  --color-primary-hover: #ff8c00;
+
+  /* Secondary Elements */
+  --color-secondary: #1e293b;
+  /* Slate 800 */
+  --color-secondary-foreground: #e2e8f0;
+  /* Slate 200 */
+
+  --color-muted: #334155;
+  /* Slate 700 */
+  --color-muted-foreground: #94a3b8;
+  /* Slate 400 */
+
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-display: var(--font-playfair-display);
+
+  /* Animations */
+  --animate-spin-slow: spin 10s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-marquee: marquee 25s linear infinite;
+  --animate-glitch: glitch 1s linear infinite;
+}
+
+/* Redline Mode (Activated via Easter Egg) */
+:root[data-mode="redline"] {
+  --color-background: #000000;
+  /* Pure Black */
+  --color-primary: #ff0000;
+  /* Aggressive Red */
+  --color-primary-hover: #cc0000;
+  --color-foreground: #ffffff;
+  --color-secondary: #110000;
+  /* Dark Red tint */
+  --color-muted: #330000;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    overflow-x: hidden;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  /* Lenis Smooth Scroll */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  /* Glitch Effect Keyframes */
+  @keyframes glitch {
+
+    2%,
+    64% {
+      transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%,
+    60% {
+      transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+      transform: translate(0, 0) skew(5deg);
+    }
+  }
+
+  /* Marquee Keyframes */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Glitch Utility */
+  .glitch-active {
+    animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+    color: var(--color-primary);
+  }
+}
