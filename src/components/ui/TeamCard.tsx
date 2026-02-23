@@ -74,22 +74,52 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                     </div>
                 )}
 
-                {/* 3. Vehicle Dynamics: Cornering G-Force Reticle */}
+                {/* 3. Vehicle Dynamics: Cornering G-Force Reticle & Pitch/Roll */}
                 {isDynamics && (
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none flex items-center justify-center bg-red-900/40 mix-blend-screen">
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none overflow-hidden bg-black/40">
+                        {/* Dynamic Grid Background */}
+                        <div className="absolute inset-0 bg-[url('/images/grid.png')] opacity-30 mix-blend-screen" />
+
+                        {/* Rotating Outer Radar */}
                         <motion.div
-                            initial={{ scale: 0.5, opacity: 0 }}
-                            whileHover={{ scale: 1.5, opacity: 1, x: 20, y: -20, rotate: 15 }}
-                            transition={{ type: "spring", stiffness: 100 }}
-                            className="w-32 h-32 border-2 border-dashed border-red-500 rounded-full relative shadow-[0_0_25px_rgba(239,68,68,0.8)]"
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-red-500/20 rounded-full"
                         >
-                            <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-red-500 rounded-full -translate-x-1/2 -translate-y-1/2 shadow-[0_0_15px_rgba(239,68,68,1)] animate-pulse" />
-                            <div className="absolute top-0 bottom-0 left-1/2 w-[1px] bg-red-500/60 -translate-x-1/2" />
-                            <div className="absolute left-0 right-0 top-1/2 h-[1px] bg-red-500/60 -translate-y-1/2" />
+                            <div className="w-[1px] h-24 bg-gradient-to-t from-red-500/0 via-red-500/80 to-red-500/0 absolute top-0 left-1/2 -translate-x-1/2" />
+                            <div className="w-24 h-[1px] bg-gradient-to-r from-red-500/0 via-red-500/80 to-red-500/0 absolute top-1/2 left-0 -translate-y-1/2" />
                         </motion.div>
-                        <div className="absolute top-4 left-4 text-red-500 font-mono text-xl font-bold tracking-widest flex items-center gap-2 drop-shadow-[0_0_10px_rgba(239,68,68,0.8)]">
-                            <Activity size={20} className="animate-pulse" /> LAT: 2.1G
+
+                        {/* Center Target & G-Dot */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-dashed border-red-500/50 rounded-full shadow-[0_0_15px_rgba(239,68,68,0.3)]">
+                            <motion.div
+                                initial={{ x: 0, y: 0 }}
+                                whileHover={{ x: 25, y: -15, scale: [1, 1.2, 1] }}
+                                transition={{ type: "spring", stiffness: 150, repeat: Infinity, repeatType: "reverse", duration: 0.8 }}
+                                className="absolute top-1/2 left-1/2 w-4 h-4 rounded-full bg-red-600 shadow-[0_0_15px_rgba(239,68,68,1)] border border-red-300 -translate-x-1/2 -translate-y-1/2"
+                            />
                         </div>
+
+                        {/* Top Right Live Stats Box */}
+                        <div className="absolute top-4 right-4 border border-red-500/40 bg-black/60 backdrop-blur-sm p-2 text-[10px] font-mono text-red-400">
+                            <div className="flex justify-between gap-4 mb-1"><span>STATUS:</span><span className="text-green-400 animate-pulse">NOMINAL</span></div>
+                            <div className="flex justify-between gap-4"><span>PITCH:</span><motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.3 }}>-1.2°</motion.span></div>
+                            <div className="flex justify-between gap-4"><span>ROLL:</span><motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.5 }}>+0.4°</motion.span></div>
+                        </div>
+
+                        {/* Bottom Left G-Meter Text */}
+                        <div className="absolute bottom-24 left-4 text-red-500 font-mono text-xs font-bold tracking-widest flex items-center gap-2 bg-black/50 px-2 py-1 border-l-2 border-red-500">
+                            <Activity size={14} className="animate-pulse" /> LAT: 2.1G
+                        </div>
+
+                        {/* Scanning Horizons */}
+                        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-red-500/50 shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
+                        <motion.div
+                            initial={{ y: "100%" }}
+                            whileHover={{ y: "-100%" }}
+                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                            className="absolute bottom-0 left-0 w-full h-[1px] bg-red-500/80 shadow-[0_0_10px_rgba(239,68,68,1)]"
+                        />
                     </div>
                 )}
 
