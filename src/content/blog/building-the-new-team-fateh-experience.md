@@ -21,8 +21,8 @@ Formula Student is serious business, but we are also huge motorsport geeks at he
 Here’s your official cheat sheet to the Team Fateh digital garage:
 
 ### 1. The Global F1 Driver Overrides
-We’ve wired up a global keystroke listener that runs silently in the bacound of every page on the site. If you type the name of a driver from the 2025 F1 Grid, the entire website’s UI temporarily overrides to match their team’s livery and iconic radio messages:
-*   Type **`leclerc`**, **`hamilon`**, or **`ferrar`** to engage Rosso Corsa mode.
+We’ve wired up a global keystroke listener that runs silently in the background of every page on the site. If you type the name of a driver from the 2025 F1 Grid, the entire website’s UI temporarily overrides to match their team’s livery and iconic radio messages:
+*   Type **`leclerc`**, **`hamilton`**, or **`ferrari`** to engage Rosso Corsa mode.
 *   Type **`russell`** or **`mercedes`** to engage Petronas Teal mode.
 *   Type **`sainz`**, **`albon`**, or **`williams`** to engage Williams Blue mode.
 *   Type **`max`** or **`redbull`** to engage Red Bull Racing mode.

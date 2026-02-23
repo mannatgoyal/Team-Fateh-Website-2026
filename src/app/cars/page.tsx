@@ -235,7 +235,7 @@ export default function CarsPage() {
                                     </div>
                                 </div>
 
-                                <div className="border-t border-white/10 pt-8 grid grid-cols-3 gap-4">
+                                <div className="border-t border-white/10 pt-8 grid grid-cols-2 gap-4">
                                     <div>
                                         <div className="text-xs text-gray-500 uppercase">Weight</div>
                                         <div className="font-mono text-lg">{car.stats.weight}</div>
@@ -243,10 +243,6 @@ export default function CarsPage() {
                                     <div>
                                         <div className="text-xs text-gray-500 uppercase">Power</div>
                                         <div className="font-mono text-lg">{car.stats.power}</div>
-                                    </div>
-                                    <div>
-                                        <div className="text-xs text-gray-500 uppercase">0-100</div>
-                                        <div className="font-mono text-lg text-primary">{car.stats.accel}</div>
                                     </div>
                                 </div>
                             </div>

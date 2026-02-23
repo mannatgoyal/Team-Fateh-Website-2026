@@ -158,11 +158,6 @@
                 "image": "/images/Team/harnoor_singh_virdi.jpg"
             },
             {
-                "name": "Jayostu Chanda",
-                "role": "Structures Engineer",
-                "image": "/images/Team/jayostu_chanda.jpg"
-            },
-            {
                 "name": "Saransh Bansal",
                 "role": "Structures Engineer",
                 "image": "/images/Team/saransh_bansal.jpg"
@@ -298,11 +293,6 @@
                 "name": "Aakanksha Jha",
                 "role": "Powertrain Engineer",
                 "image": "/images/Team/aakanksha_jha.jpg"
-            },
-            {
-                "name": "Vikram Singh",
-                "role": "Powertrain Engineer",
-                "image": "/images/Team/vikram_singh.jpg"
             }
         ],
         "AERODYNAMICS": [
@@ -367,11 +357,6 @@
                 "name": "Harnoor Singh Virdi",
                 "role": "Structures Engineer",
                 "image": "/images/Team/harnoor_singh_virdi.jpg"
-            },
-            {
-                "name": "Jayostu Chanda",
-                "role": "Structures Engineer",
-                "image": "/images/Team/jayostu_chanda.jpg"
             },
             {
                 "name": "Saransh Bansal",

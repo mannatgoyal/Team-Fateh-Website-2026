@@ -42,7 +42,7 @@ export default function Hero() {
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
                     <h2 className="text-primary font-mono text-sm md:text-base tracking-[0.5em] mb-4 uppercase">
-                        Est. 2008 // Thapar Institute
+                        Est. 2008 // THAPAR INSTITUTE OF ENGINEERING AND TECHNOLOGY, PATIALA
                     </h2>
                     <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold leading-[0.9] tracking-tighter mb-8 text-white mix-blend-difference">
                         EAT.<br />
@@ -54,7 +54,7 @@ export default function Hero() {
                     <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
                         Pushing the limits of electric mobility.
                         <br />
-                        From Patiala to the World.
+                        We Build What We Dream.
                     </p>
 
                     <motion.div
