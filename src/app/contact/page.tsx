@@ -65,11 +65,19 @@ export default function ContactPage() {
                             <h3 className="text-2xl font-bold mb-6 text-secondary flex items-center gap-2">
                                 <MapPin className="text-primary" /> HQ Location
                             </h3>
-                            <p className="text-slate-600 leading-relaxed">
-                                Thapar Institute of Engineering & Technology<br />
-                                Bhadson Rd, Patiala,<br />
-                                Punjab 147004, India
-                            </p>
+                            <a
+                                href="https://maps.app.goo.gl/6WhQvAddFdCfT3u2A"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block text-slate-600 leading-relaxed hover:text-primary transition-colors group"
+                            >
+                                H Block, Thapar Institute of Engineering and Technology<br />
+                                Bhadson Road, Patiala,<br />
+                                Punjab, India 147004
+                                <div className="mt-4 text-sm font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                                    Open in Google Maps <MapPin size={14} />
+                                </div>
+                            </a>
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
