@@ -40,7 +40,7 @@ export default function Home() {
                 We started with a dream at Thapar Institute. Today, we are a force in Formula Student India.
                 <br /><br />
                 <span className="text-slate-200 font-bold">18 Cars later</span>, our mission remains unchanged:
-                Build the fastest student racing car in the country.
+                To be the premier student racing team in the country, and to compete among the absolute best in the world.
               </p>
             </FadeIn>
           </div>
@@ -53,12 +53,12 @@ export default function Home() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/jYNff6cg0NE?autoplay=1&mute=1&controls=0&loop=1&playlist=jYNff6cg0NE"
+            src="https://www.youtube.com/embed/_gaAUkVbGZ0?autoplay=1&mute=1&controls=0&loop=1&playlist=_gaAUkVbGZ0"
             title="Team Fateh Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all duration-700"
+            className="w-full h-full object-cover opacity-30 grayscale brightness-50 mix-blend-luminosity group-hover:opacity-70 group-hover:grayscale-0 group-hover:mix-blend-normal transition-all duration-700"
             style={{ pointerEvents: 'none' }} // Background video feel
           ></iframe>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
