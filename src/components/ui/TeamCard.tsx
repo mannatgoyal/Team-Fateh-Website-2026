@@ -76,15 +76,20 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
 
                 {/* 3. Vehicle Dynamics: Cornering G-Force Reticle */}
                 {isDynamics && (
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none flex items-center justify-center">
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none flex items-center justify-center bg-red-900/20 mix-blend-overlay">
                         <motion.div
                             initial={{ scale: 0.5, opacity: 0 }}
-                            whileHover={{ scale: 1.5, opacity: 0.5, x: 20, y: -20 }}
-                            transition={{ type: "spring" }}
-                            className="w-32 h-32 border border-dashed border-primary rounded-full relative"
+                            whileHover={{ scale: 1.5, opacity: 0.5, x: 20, y: -20, rotate: 15 }}
+                            transition={{ type: "spring", stiffness: 100 }}
+                            className="w-32 h-32 border-2 border-dashed border-red-500 rounded-full relative shadow-[0_0_15px_rgba(239,68,68,0.5)]"
                         >
-                            <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-red-500 rounded-full -translate-x-1/2 -translate-y-1/2" />
+                            <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-red-500 rounded-full -translate-x-1/2 -translate-y-1/2 shadow-[0_0_10px_rgba(239,68,68,1)] animate-pulse" />
+                            <div className="absolute top-0 bottom-0 left-1/2 w-[1px] bg-red-500/30 -translate-x-1/2" />
+                            <div className="absolute left-0 right-0 top-1/2 h-[1px] bg-red-500/30 -translate-y-1/2" />
                         </motion.div>
+                        <div className="absolute top-4 left-4 text-red-500 font-mono text-xs font-bold tracking-widest flex items-center gap-2">
+                            <Activity size={14} className="animate-pulse" /> LAT: 2.1G
+                        </div>
                     </div>
                 )}
 

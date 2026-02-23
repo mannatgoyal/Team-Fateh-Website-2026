@@ -80,7 +80,8 @@ export default function ReactionTimeGame() {
         if (time < 150) setRanking("F1 DRIVER (MAX VERSTAPPEN)");
         else if (time < 200) setRanking("F2 ROOKIE");
         else if (time < 250) setRanking("GENTLEMAN DRIVER");
-        else if (time < 300) setRanking("GRANDMA IN A PRIUS");
+        else if (time < 300) setRanking("AVERAGE DRIVER");
+        else if (time < 400) setRanking("GRANDMA IN A PRIUS");
         else setRanking("ARE YOU SLEEPING?");
     };
 
