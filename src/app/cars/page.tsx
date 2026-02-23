@@ -241,7 +241,7 @@ export default function CarsPage() {
                                         <div className="font-mono text-lg">{car.stats.weight}</div>
                                     </div>
                                     <div>
-                                        <div className="text-xs text-gray-500 uppercase">Power</div>
+                                        <div className="text-xs text-gray-500 uppercase">Specs</div>
                                         <div className="font-mono text-lg">{car.stats.power}</div>
                                     </div>
                                 </div>
