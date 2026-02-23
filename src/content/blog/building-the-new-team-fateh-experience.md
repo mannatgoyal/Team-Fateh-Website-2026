@@ -14,6 +14,8 @@ Out went the bloated templates. In came a custom **Next.js**, **React**, and **T
 
 We adhered to a strict aesthetic: **Matte Black** and our signature **Racing Orange**, with a default monochrome treatment for images that only saturates when you interact with them. It’s a disciplined, no-nonsense look—until you discover what’s hidden beneath the surface.
 
+*Special Note: The development of this new digital experience was generously funded by Harnoor Singh, a proud Team Fateh alumnus from the Batch of 2018.*
+
 ## Easter Eggs: Engineering the Fun
 
 Formula Student is serious business, but we are also huge motorsport geeks at heart. We decided to gamify the site by hiding a series of Easter eggs across the platform. If you know where to look (or what to type), you can unlock some serious performance modes.

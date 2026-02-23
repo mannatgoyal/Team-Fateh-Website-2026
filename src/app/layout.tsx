@@ -40,6 +40,11 @@ export default function RootLayout({
             {children}
           </main>
           <SponsorBelt />
+          <footer className="w-full bg-background border-t border-white/5 py-6 text-center z-50 relative">
+            <p className="font-mono text-[10px] tracking-widest text-muted-foreground uppercase opacity-40 hover:opacity-100 transition-opacity">
+              Designed & Engineered by Mannat Goyal
+            </p>
+          </footer>
         </EasterEggProvider>
       </body>
     </html>
