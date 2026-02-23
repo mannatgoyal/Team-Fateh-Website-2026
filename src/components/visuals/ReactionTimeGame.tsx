@@ -150,10 +150,9 @@ export default function ReactionTimeGame() {
                                 <div className="text-8xl font-mono font-bold tabular-nums mb-4 drop-shadow-[0_0_15px_rgba(255,165,31,0.5)]">
                                     {reactionTime}<span className="text-4xl">ms</span>
                                 </div>
-                                <div className="inline-block border border-white/20 bg-white/5 px-6 py-2 rounded-full text-white font-display text-xl tracking-widest uppercase">
+                                <div className="inline-block border border-white/20 bg-white/5 px-6 py-2 rounded-full text-white font-display text-xl tracking-widest uppercase mb-8">
                                     {ranking}
                                 </div>
-                                <p className="text-white/50 mt-8 text-sm animate-pulse">Click to try again</p>
                             </div>
                         )}
                     </div>
