@@ -39,10 +39,10 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
             viewport={{ once: true }}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.4 }}
-            className="group relative w-full aspect-[3/4] overflow-hidden bg-secondary border border-white/5 hover:border-primary/50 transition-colors"
+            className="group relative w-full flex flex-col items-center text-center p-8 bg-secondary/40 border border-white/5 hover:border-primary/50 transition-colors"
         >
-            {/* Image */}
-            <div className="absolute inset-0 grayscale group-hover:grayscale-0 transition-all duration-500">
+            {/* Image Container (Round) */}
+            <div className="relative w-48 h-48 mb-6 rounded-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 border border-white/10 group-hover:border-primary/50 shadow-lg">
                 <Image
                     src={imgSrc}
                     alt={member.name}
@@ -53,15 +53,15 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                 />
 
                 {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500" />
 
                 {/* ---------------- EASTER EGG LAYERS ---------------- */}
 
                 {/* 1. Management: Classified Stamp */}
                 {isManagement && (
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                        <div className="border-4 border-red-600/80 text-red-600/80 px-4 py-2 font-display font-bold text-3xl -rotate-12 tracking-widest uppercase backdrop-blur-sm">
-                            HQ CLEARANCE
+                        <div className="border-4 border-red-600/80 text-red-600/80 px-2 py-1 font-display font-bold text-xl -rotate-12 tracking-widest uppercase backdrop-blur-[2px]">
+                            SECRET
                         </div>
                     </div>
                 )}
@@ -70,7 +70,7 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                 {isStructures && (
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-500 pointer-events-none mix-blend-overlay flex flex-wrap gap-1 justify-center content-center overflow-hidden">
                         {[...Array(40)].map((_, i) => (
-                            <Hexagon key={i} size={48} className="text-gray-400 opacity-20" />
+                            <Hexagon key={i} size={24} className="text-gray-400 opacity-20" />
                         ))}
                     </div>
                 )}
@@ -85,32 +85,31 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                         <motion.div
                             animate={{ rotate: 360 }}
                             transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-red-500/20 rounded-full"
+                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-red-500/20 rounded-full"
                         >
-                            <div className="w-[1px] h-24 bg-gradient-to-t from-red-500/0 via-red-500/80 to-red-500/0 absolute top-0 left-1/2 -translate-x-1/2" />
-                            <div className="w-24 h-[1px] bg-gradient-to-r from-red-500/0 via-red-500/80 to-red-500/0 absolute top-1/2 left-0 -translate-y-1/2" />
+                            <div className="w-[1px] h-20 bg-gradient-to-t from-red-500/0 via-red-500/80 to-red-500/0 absolute top-0 left-1/2 -translate-x-1/2" />
+                            <div className="w-20 h-[1px] bg-gradient-to-r from-red-500/0 via-red-500/80 to-red-500/0 absolute top-1/2 left-0 -translate-y-1/2" />
                         </motion.div>
 
                         {/* Center Target & G-Dot */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-dashed border-red-500/50 rounded-full shadow-[0_0_15px_rgba(239,68,68,0.3)]">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 border-2 border-dashed border-red-500/50 rounded-full shadow-[0_0_15px_rgba(239,68,68,0.3)]">
                             <motion.div
                                 initial={{ x: 0, y: 0 }}
-                                whileHover={{ x: 25, y: -15, scale: [1, 1.2, 1] }}
+                                whileHover={{ x: 15, y: -10, scale: [1, 1.2, 1] }}
                                 transition={{ type: "spring", stiffness: 150, repeat: Infinity, repeatType: "reverse", duration: 0.8 }}
-                                className="absolute top-1/2 left-1/2 w-4 h-4 rounded-full bg-red-600 shadow-[0_0_15px_rgba(239,68,68,1)] border border-red-300 -translate-x-1/2 -translate-y-1/2"
+                                className="absolute top-1/2 left-1/2 w-3 h-3 rounded-full bg-red-600 shadow-[0_0_15px_rgba(239,68,68,1)] border border-red-300 -translate-x-1/2 -translate-y-1/2"
                             />
                         </div>
 
                         {/* Top Right Live Stats Box */}
-                        <div className="absolute top-4 right-4 border border-red-500/40 bg-black/60 backdrop-blur-sm p-2 text-[10px] font-mono text-red-400">
-                            <div className="flex justify-between gap-4 mb-1"><span>STATUS:</span><span className="text-green-400 animate-pulse">NOMINAL</span></div>
-                            <div className="flex justify-between gap-4"><span>PITCH:</span><motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.3 }}>-1.2°</motion.span></div>
-                            <div className="flex justify-between gap-4"><span>ROLL:</span><motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.5 }}>+0.4°</motion.span></div>
+                        <div className="absolute top-2 right-2 border border-red-500/40 bg-black/60 backdrop-blur-sm p-1 text-[8px] font-mono text-red-400">
+                            <div className="flex justify-between gap-2"><span>P:</span><motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.3 }}>-1.2°</motion.span></div>
+                            <div className="flex justify-between gap-2"><span>R:</span><motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.5 }}>+0.4°</motion.span></div>
                         </div>
 
                         {/* Bottom Left G-Meter Text */}
-                        <div className="absolute bottom-24 left-4 text-red-500 font-mono text-xs font-bold tracking-widest flex items-center gap-2 bg-black/50 px-2 py-1 border-l-2 border-red-500">
-                            <Activity size={14} className="animate-pulse" /> LAT: 2.1G
+                        <div className="absolute bottom-2 left-2 text-red-500 font-mono text-[10px] font-bold tracking-widest flex items-center gap-1 bg-black/50 px-1 py-0.5 border-l border-red-500">
+                            <Activity size={10} className="animate-pulse" /> LAT: 2.1G
                         </div>
 
                         {/* Scanning Horizons */}
@@ -143,14 +142,14 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                 {/* 5. Powertrain: Heat/Combustion Element */}
                 {isPowertrain && (
                     <div className="absolute inset-0 bg-gradient-to-t from-orange-600/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-screen">
-                        <Zap className="absolute top-4 right-4 text-orange-400 animate-pulse" size={24} fill="currentColor" />
+                        <Zap className="absolute top-4 right-4 text-orange-400 animate-pulse" size={20} fill="currentColor" />
                     </div>
                 )}
 
                 {/* 6. Electronics: PCB Traces */}
                 {isElectronics && (
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-[url('/images/grid.png')] bg-cover mix-blend-overlay">
-                        <Cpu className="absolute top-4 right-4 text-green-400 animate-pulse" size={24} />
+                        <Cpu className="absolute top-4 right-4 text-green-400 animate-pulse" size={20} />
                         <div className="absolute bottom-1/2 left-0 w-full h-[1px] bg-green-500/50 shadow-[0_0_5px_rgba(74,222,128,0.8)]" />
                         <div className="absolute top-0 left-1/3 w-[1px] h-full bg-green-500/50 shadow-[0_0_5px_rgba(74,222,128,0.8)]" />
                     </div>
@@ -158,11 +157,22 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
 
                 {/* 7. Data Acquisition: Live Telemetry */}
                 {isData && (
-                    <div className="absolute top-6 left-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none font-mono text-xs text-cyan-400 space-y-1">
-                        <Activity className="absolute -top-4 -right-8 text-cyan-400" size={16} />
-                        <motion.div animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.5 }}>CAN_RX: OK</motion.div>
-                        <motion.div animate={{ opacity: [0.5, 1, 0.5] }} transition={{ repeat: Infinity, duration: 0.8 }}>LAT: 30.353</motion.div>
-                        <motion.div animate={{ opacity: [1, 0.3, 1] }} transition={{ repeat: Infinity, duration: 0.4 }}>LNG: 76.361</motion.div>
+                    <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none font-mono text-[8px] text-cyan-400 space-y-1">
+                        {[...Array(5)].map((_, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, x: -10 }}
+                                whileHover={{ opacity: 1, x: 0 }}
+                                transition={{ delay: i * 0.1, duration: 0.2 }}
+                                className="flex items-center gap-2"
+                            >
+                                <div className="w-1 h-1 bg-cyan-400 rounded-full animate-ping" />
+                                <div>
+                                    <span className="opacity-50">0x{Math.floor(Math.random() * 1000).toString(16)} </span>
+                                    <ScanLine size={10} className="inline mr-1" /> DATA
+                                </div>
+                            </motion.div>
+                        ))}
                     </div>
                 )}
 
@@ -179,19 +189,51 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                     </div>
                 )}
 
+                {/* 8. Chief Design Engineer: CAD Blueprint */}
+                {isDesign && (
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-blue-950/80 mix-blend-hard-light overflow-hidden">
+                        {/* Blueprint Grid */}
+                        <div className="absolute inset-0"
+                            style={{
+                                backgroundImage: "linear-gradient(rgba(59, 130, 246, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.3) 1px, transparent 1px)",
+                                backgroundSize: "20px 20px"
+                            }}
+                        />
+                        {/* Rotating Compass / CAD Element */}
+                        <motion.div
+                            initial={{ rotate: 0 }}
+                            animate={{ rotate: 90 }}
+                            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                        >
+                            <Compass className="text-blue-400 opacity-60 w-24 h-24" />
+                        </motion.div>
+                        {/* Measurement Lines */}
+                        <motion.div
+                            initial={{ width: 0 }}
+                            whileHover={{ width: "80%" }}
+                            transition={{ duration: 1 }}
+                            className="absolute top-8 left-4 h-[1px] bg-blue-400/80"
+                        />
+                        <div className="absolute top-4 left-4 text-blue-300 font-mono text-[8px]">
+                            <span className="animate-pulse">DRAW MODE</span><br />
+                            X: 231.4<br />
+                            SCALE: 1:1
+                        </div>
+                    </div>
+                )}
+
                 {/* ---------------- END EASTER EGGS ---------------- */}
             </div>
 
-            {/* Content */}
-            <div className="absolute bottom-0 left-0 w-full p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300 z-10">
-                <div className="overflow-hidden mb-1">
-                    <p className={`font-mono text-[10px] uppercase tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300 delay-75 
-                        ${isElectronics || isData ? "text-green-400" : isAero ? "text-blue-400" : isAuto ? "text-fuchsia-400" : "text-primary"}
-                    `}>
-                        {member.role}
-                    </p>
-                </div>
-                <h3 className="text-xl font-display font-medium text-white mb-4">
+            {/* Content (Below Image) */}
+            <div className="w-full">
+                <p className={`font-mono text-xs uppercase tracking-widest mb-2
+                    ${isElectronics || isData ? "text-green-400" : isAero ? "text-blue-400" : isAuto ? "text-fuchsia-400" : "text-primary"}
+                `}>
+                    {member.role}
+                </p>
+                <h3 className="text-xl font-display font-medium text-white mb-4 leading-snug">
                     {member.name}
                 </h3>
 
@@ -200,7 +242,7 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                         href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-xs font-mono text-muted-foreground hover:text-white transition-colors"
+                        className="inline-flex items-center justify-center gap-2 text-xs font-mono text-muted-foreground hover:text-white transition-colors"
                         data-cursor="hover"
                     >
                         <Linkedin size={14} />

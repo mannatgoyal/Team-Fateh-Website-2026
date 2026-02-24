@@ -1,373 +1,426 @@
 {
-    "Season 2026-27": {
-        "": [
-            {
-                "name": "Niladri Chakraborty",
-                "role": "Team Captain",
-                "image": "/images/Team/niladri_chakraborty.jpg"
-            },
-            {
-                "name": "Anirudh Tanikella",
-                "role": "Vice Captain & Structures Lead",
-                "image": "/images/Team/anirudh_tanikella.jpg"
-            },
-            {
-                "name": "Mannat Goyal",
-                "role": "Team Manager",
-                "image": "/images/Team/mannat_goyal.jpg"
-            }
-        ],
-        "TECHNICAL DIRECTORS": [
-            {
-                "name": "Dravin Chawla",
-                "role": "Technical Director & Manufacturing Lead",
-                "image": "/images/Team/dravin_chawla.jpg"
-            },
-            {
-                "name": "Aditya Sood",
-                "role": "Technical Director & Powertrain Lead",
-                "image": "/images/Team/aditya_sood.jpg"
-            }
-        ],
-        "VEHICLE DYNAMICS": [
-            {
-                "name": "Avin Sachdeva",
-                "role": "Vehicle Dynamics Lead",
-                "image": "/images/Team/avin_sachdeva.jpg"
-            },
-            {
-                "name": "Arshjeet Singh",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/arshjeet_singh.jpg"
-            },
-            {
-                "name": "Ayush Yadav",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/ayush_yadav.jpg"
-            },
-            {
-                "name": "Sanchit Jagdeo",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/sanchit_jagdeo.jpg"
-            },
-            {
-                "name": "Singh Aditee Jiutbandhan",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/singh_aditee.jpg"
-            },
-            {
-                "name": "Vikhyat Hari",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/vikhyat_hari.jpg"
-            }
-        ],
-        "AERODYNAMICS": [
-            {
-                "name": "Akshay Malhan",
-                "role": "Aerodynamics Lead",
-                "image": "/images/Team/akshay_malhan.jpg"
-            },
-            {
-                "name": "Arnav Gautam",
-                "role": "Aerodynamics Lead",
-                "image": "/images/Team/arnav_gautam.jpg"
-            },
-            {
-                "name": "Gurkeerat Kang",
-                "role": "Aerodynamicist",
-                "image": "/images/Team/gurkeerat_kang.jpg"
-            },
-            {
-                "name": "Ishaan Sharma",
-                "role": "Aerodynamicist",
-                "image": "/images/Team/ishaan_sharma.jpg"
-            }
-        ],
-        "POWERTRAIN & THERMAL": [
-            {
-                "name": "Karanveer Singh",
-                "role": "Thermal Management Lead",
-                "image": "/images/Team/karanveer_singh.jpg"
-            },
-            {
-                "name": "Aakanksha Jha",
-                "role": "Powertrain Engineer",
-                "image": "/images/Team/aakanksha_jha.jpg"
-            }
-        ],
-        "ELECTRONICS": [
-            {
-                "name": "Aryan Sadana",
-                "role": "Electronics (LV) Lead",
-                "image": "/images/Team/aryan_sadana.jpg"
-            },
-            {
-                "name": "Ridhi Gupta",
-                "role": "Electronics (LV) Lead",
-                "image": "/images/Team/ridhi_gupta.jpg"
-            },
-            {
-                "name": "Kushagra Jain",
-                "role": "Electronics Engineer",
-                "image": "/images/Team/kushagra_jain.jpg"
-            }
-        ],
-        "Data Acquisition": [
-            {
-                "name": "Tanishq Sahu",
-                "role": "Data Acquisition Lead",
-                "image": "/images/Team/tanishq_sahu.jpg"
-            },
-            {
-                "name": "Kanishka Sharma",
-                "role": "Data Acquisition Engineer",
-                "image": "/images/Team/kanishka_sharma.jpg"
-            },
-            {
-                "name": "Vedant Shri Agarwal",
-                "role": "Data Acquisition Engineer",
-                "image": "/images/Team/vedant_shri_agarwal.jpg"
-            }
-        ],
-        "Autonomous Systems": [
-            {
-                "name": "Yash Tanwar",
-                "role": "Autonomous Lead",
-                "image": "/images/Team/yash_tanwar.jpg"
-            }
-        ],
-        "STRUCTURES": [
-            {
-                "name": "Ansh Lamba",
-                "role": "Structures Engineer",
-                "image": "/images/Team/ansh_lamba.jpg"
-            },
-            {
-                "name": "Aviral Tyagi",
-                "role": "Structures Engineer",
-                "image": "/images/Team/aviral_tyagi.jpg"
-            },
-            {
-                "name": "Divyam Talreja",
-                "role": "Structures Engineer",
-                "image": "/images/Team/divyam_talreja.jpg"
-            },
-            {
-                "name": "Harnoor Singh Virdi",
-                "role": "Structures Engineer",
-                "image": "/images/Team/harnoor_singh_virdi.jpg"
-            },
-            {
-                "name": "Saransh Bansal",
-                "role": "Structures Engineer",
-                "image": "/images/Team/saransh_bansal.jpg"
-            },
-            {
-                "name": "Viraaz Singh Gill",
-                "role": "Structures Engineer",
-                "image": "/images/Team/viraaz_singh_gill.jpg"
-            }
-        ]
-    },
-    "Season 2025-26": {
-        "MANAGEMENT": [
-            {
-                "name": "Pranav Gupta",
-                "role": "Captain",
-                "image": "/images/Team/pranav_gupta.jpg"
-            },
-            {
-                "name": "Sanidhiya Gupta",
-                "role": "Vice-Captain",
-                "image": "/images/Team/sanidhiya_gupta.jpg"
-            },
-            {
-                "name": "Raghav Garg",
-                "role": "Team Manager",
-                "image": "/images/Team/raghav_garg.jpg"
-            }
-        ],
-        "TECHNICAL DIRECTORS": [
-            {
-                "name": "Mrikulesh Minhas",
-                "role": "Technical Director",
-                "image": "/images/Team/mrikulesh_minhas.jpg"
-            }
-        ],
-        "ELECTRONICS & DAQ": [
-            {
-                "name": "Tejas Kothiyal",
-                "role": "Electronics Lead",
-                "image": "/images/Team/tejas_kothiyal.jpg"
-            },
-            {
-                "name": "Pratham Sharma",
-                "role": "Data Acquisition Lead",
-                "image": "/images/Team/pratham_sharma.jpg"
-            },
-            {
-                "name": "Mannat Goyal",
-                "role": "Data Acquisition Engineer",
-                "image": "/images/Team/mannat_goyal.jpg"
-            },
-            {
-                "name": "Tanishq Sahu",
-                "role": "Data Acquisition Engineer",
-                "image": "/images/Team/tanishq_sahu.jpg"
-            },
-            {
-                "name": "Yash Tanwar",
-                "role": "Data Acquisition Engineer",
-                "image": "/images/Team/yash_tanwar.jpg"
-            },
-            {
-                "name": "Kanishka Sharma",
-                "role": "Data Acquisition Engineer",
-                "image": "/images/Team/kanishka_sharma.jpg"
-            },
-            {
-                "name": "Kushagra Jain",
-                "role": "Electronics Engineer",
-                "image": "/images/Team/kushagra_jain.jpg"
-            },
-            {
-                "name": "Vedant Shri Agarwal",
-                "role": "Data Acquisition Engineer",
-                "image": "/images/Team/vedant_shri_agarwal.jpg"
-            }
-        ],
-        "VEHICLE DYNAMICS": [
-            {
-                "name": "Sanidhiya Gupta",
-                "role": "Vehicle Dynamics Lead",
-                "image": "/images/Team/sanidhiya_gupta.jpg"
-            },
-            {
-                "name": "Avin Sachdeva",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/avin_sachdeva.jpg"
-            },
-            {
-                "name": "Arshjeet Singh",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/arshjeet_singh.jpg"
-            },
-            {
-                "name": "Ayush Yadav",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/ayush_yadav.jpg"
-            },
-            {
-                "name": "Sanchit Jagdeo",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/sanchit_jagdeo.jpg"
-            },
-            {
-                "name": "Singh Aditee Jiutbandhan",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/singh_aditee.jpg"
-            },
-            {
-                "name": "Vikhyat Hari",
-                "role": "Vehicle Dynamics Engineer",
-                "image": "/images/Team/vikhyat_hari.jpg"
-            }
-        ],
-        "POWERTRAIN & THERMAL": [
-            {
-                "name": "Mrikulesh Minhas",
-                "role": "Powertrain Lead",
-                "image": "/images/Team/mrikulesh_minhas.jpg"
-            },
-            {
-                "name": "Karanveer Singh",
-                "role": "Thermal Management",
-                "image": "/images/Team/karanveer_singh.jpg"
-            },
-            {
-                "name": "Aditya Sood",
-                "role": "Powertrain Engineer",
-                "image": "/images/Team/aditya_sood.jpg"
-            },
-            {
-                "name": "Aakanksha Jha",
-                "role": "Powertrain Engineer",
-                "image": "/images/Team/aakanksha_jha.jpg"
-            }
-        ],
-        "AERODYNAMICS": [
-            {
-                "name": "Akshay Malhan",
-                "role": "Aerodynamicist",
-                "image": "/images/Team/akshay_malhan.jpg"
-            },
-            {
-                "name": "Arnav Gautam",
-                "role": "Aerodynamicist",
-                "image": "/images/Team/arnav_gautam.jpg"
-            },
-            {
-                "name": "Gurkeerat Kang",
-                "role": "Aerodynamicist",
-                "image": "/images/Team/gurkeerat_kang.jpg"
-            },
-            {
-                "name": "Ishaan Sharma",
-                "role": "Aerodynamicist",
-                "image": "/images/Team/ishaan_sharma.jpg"
-            }
-        ],
-        "STRUCTURES": [
-            {
-                "name": "Raghav Garg",
-                "role": "Structures Lead",
-                "image": "/images/Team/raghav_garg.jpg"
-            },
-            {
-                "name": "Anirudh Tanikella",
-                "role": "Structures Engineer",
-                "image": "/images/Team/anirudh_tanikella.jpg"
-            },
-            {
-                "name": "Dravin Chawla",
-                "role": "Structures Engineer",
-                "image": "/images/Team/dravin_chawla.jpg"
-            },
-            {
-                "name": "Niladri Chakraborty",
-                "role": "Structures Engineer",
-                "image": "/images/Team/niladri_chakraborty.jpg"
-            },
-            {
-                "name": "Ansh Lamba",
-                "role": "Structures Engineer",
-                "image": "/images/Team/ansh_lamba.jpg"
-            },
-            {
-                "name": "Aviral Tyagi",
-                "role": "Structures Engineer",
-                "image": "/images/Team/aviral_tyagi.jpg"
-            },
-            {
-                "name": "Divyam Talreja",
-                "role": "Structures Engineer",
-                "image": "/images/Team/divyam_talreja.jpg"
-            },
-            {
-                "name": "Harnoor Singh Virdi",
-                "role": "Structures Engineer",
-                "image": "/images/Team/harnoor_singh_virdi.jpg"
-            },
-            {
-                "name": "Saransh Bansal",
-                "role": "Structures Engineer",
-                "image": "/images/Team/saransh_bansal.jpg"
-            },
-            {
-                "name": "Viraaz Singh Gill",
-                "role": "Structures Engineer",
-                "image": "/images/Team/viraaz_singh_gill.jpg"
-            }
-        ]
-    }
+  "Season 2026-27": {
+    "Team Leaders": [
+      {
+        "name": "Niladri Chakraborty",
+        "role": "Team Captain",
+        "image": "/images/Team/niladri_chakraborty.jpg"
+      },
+      {
+        "name": "Anirudh Tanikella",
+        "role": "Vice Captain & Structures Lead",
+        "image": "/images/Team/anirudh_tanikella.jpg"
+      },
+      {
+        "name": "Mannat Goyal",
+        "role": "Team Manager",
+        "image": "/images/Team/mannat_goyal.jpg"
+      },
+      {
+        "name": "Dravin Chawla",
+        "role": "Technical Director & Manufacturing Lead",
+        "image": "/images/Team/dravin_chawla.jpg"
+      },
+      {
+        "name": "Aditya Sood",
+        "role": "Technical Director & Powertrain Lead",
+        "image": "/images/Team/aditya_sood.jpg"
+      },
+      {
+        "name": "Avin Sachdeva",
+        "role": "Vehicle Dynamics Lead",
+        "image": "/images/Team/avin_sachdeva.jpg"
+      },
+      {
+        "name": "Akshay Malhan",
+        "role": "Aerodynamics Lead",
+        "image": "/images/Team/akshay_malhan.jpg"
+      },
+      {
+        "name": "Arnav Gautam",
+        "role": "Aerodynamics Lead",
+        "image": "/images/Team/arnav_gautam.jpg"
+      },
+      {
+        "name": "Karanveer Singh",
+        "role": "Thermal Management Lead",
+        "image": "/images/Team/karanveer_singh.jpg"
+      },
+      {
+        "name": "Aryan Sadana",
+        "role": "Electronics (LV) Lead",
+        "image": "/images/Team/aryan_sadana.jpg"
+      },
+      {
+        "name": "Ridhi Gupta",
+        "role": "Electronics (LV) Lead",
+        "image": "/images/Team/ridhi_gupta.jpg"
+      },
+      {
+        "name": "Tanishq Sahu",
+        "role": "Data Acquisition Lead",
+        "image": "/images/Team/tanishq_sahu.jpg"
+      },
+      {
+        "name": "Yash Tanwar",
+        "role": "Autonomous Lead",
+        "image": "/images/Team/yash_tanwar.jpg"
+      }
+    ],
+    "VEHICLE DYNAMICS": [
+      {
+        "name": "Avin Sachdeva",
+        "role": "Vehicle Dynamics Lead",
+        "image": "/images/Team/avin_sachdeva.jpg"
+      },
+      {
+        "name": "Arshjeet Singh",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/arshjeet_singh.jpg"
+      },
+      {
+        "name": "Ayush Yadav",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/ayush_yadav.jpg"
+      },
+      {
+        "name": "Sanchit Jagdeo",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/sanchit_jagdeo.jpg"
+      },
+      {
+        "name": "Singh Aditee Jiutbandhan",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/singh_aditee.jpg"
+      },
+      {
+        "name": "Vikhyat Hari",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/vikhyat_hari.jpg"
+      }
+    ],
+    "AERODYNAMICS": [
+      {
+        "name": "Akshay Malhan",
+        "role": "Aerodynamics Lead",
+        "image": "/images/Team/akshay_malhan.jpg"
+      },
+      {
+        "name": "Arnav Gautam",
+        "role": "Aerodynamics Lead",
+        "image": "/images/Team/arnav_gautam.jpg"
+      },
+      {
+        "name": "Gurkeerat Kang",
+        "role": "Aerodynamicist",
+        "image": "/images/Team/gurkeerat_kang.jpg"
+      },
+      {
+        "name": "Ishaan Sharma",
+        "role": "Aerodynamicist",
+        "image": "/images/Team/ishaan_sharma.jpg"
+      }
+    ],
+    "POWERTRAIN & THERMAL": [
+      {
+        "name": "Aditya Sood",
+        "role": "Technical Director & Powertrain Lead",
+        "image": "/images/Team/aditya_sood.jpg"
+      },
+      {
+        "name": "Karanveer Singh",
+        "role": "Thermal Management Lead",
+        "image": "/images/Team/karanveer_singh.jpg"
+      },
+      {
+        "name": "Aakanksha Jha",
+        "role": "Powertrain Engineer",
+        "image": "/images/Team/aakanksha_jha.jpg"
+      }
+    ],
+    "ELECTRONICS": [
+      {
+        "name": "Aryan Sadana",
+        "role": "Electronics (LV) Lead",
+        "image": "/images/Team/aryan_sadana.jpg"
+      },
+      {
+        "name": "Ridhi Gupta",
+        "role": "Electronics (LV) Lead",
+        "image": "/images/Team/ridhi_gupta.jpg"
+      },
+      {
+        "name": "Kushagra Jain",
+        "role": "Electronics Engineer",
+        "image": "/images/Team/kushagra_jain.jpg"
+      }
+    ],
+    "Data Acquisition": [
+      {
+        "name": "Tanishq Sahu",
+        "role": "Data Acquisition Lead",
+        "image": "/images/Team/tanishq_sahu.jpg"
+      },
+      {
+        "name": "Kanishka Sharma",
+        "role": "Data Acquisition Engineer",
+        "image": "/images/Team/kanishka_sharma.jpg"
+      },
+      {
+        "name": "Vedant Shri Agarwal",
+        "role": "Data Acquisition Engineer",
+        "image": "/images/Team/vedant_shri_agarwal.jpg"
+      }
+    ],
+    "Autonomous Systems": [
+      {
+        "name": "Yash Tanwar",
+        "role": "Autonomous Lead",
+        "image": "/images/Team/yash_tanwar.jpg"
+      }
+    ],
+    "STRUCTURES": [
+      {
+        "name": "Dravin Chawla",
+        "role": "Technical Director & Manufacturing Lead",
+        "image": "/images/Team/dravin_chawla.jpg"
+      },
+      {
+        "name": "Anirudh Tanikella",
+        "role": "Vice Captain & Structures Lead",
+        "image": "/images/Team/anirudh_tanikella.jpg"
+      },
+      {
+        "name": "Ansh Lamba",
+        "role": "Structures Engineer",
+        "image": "/images/Team/ansh_lamba.jpg"
+      },
+      {
+        "name": "Aviral Tyagi",
+        "role": "Structures Engineer",
+        "image": "/images/Team/aviral_tyagi.jpg"
+      },
+      {
+        "name": "Divyam Talreja",
+        "role": "Structures Engineer",
+        "image": "/images/Team/divyam_talreja.jpg"
+      },
+      {
+        "name": "Harnoor Singh Virdi",
+        "role": "Structures Engineer",
+        "image": "/images/Team/harnoor_singh_virdi.jpg"
+      },
+      {
+        "name": "Saransh Bansal",
+        "role": "Structures Engineer",
+        "image": "/images/Team/saransh_bansal.jpg"
+      },
+      {
+        "name": "Viraaz Singh Gill",
+        "role": "Structures Engineer",
+        "image": "/images/Team/viraaz_singh_gill.jpg"
+      }
+    ]
+  },
+  "Season 2025-26": {
+    "MANAGEMENT": [
+      {
+        "name": "Pranav Gupta",
+        "role": "Captain",
+        "image": "/images/Team/pranav_gupta.jpg"
+      },
+      {
+        "name": "Sanidhiya Gupta",
+        "role": "Vice-Captain",
+        "image": "/images/Team/sanidhiya_gupta.jpg"
+      },
+      {
+        "name": "Raghav Garg",
+        "role": "Team Manager",
+        "image": "/images/Team/raghav_garg.jpg"
+      }
+    ],
+    "TECHNICAL DIRECTORS": [
+      {
+        "name": "Mrikulesh Minhas",
+        "role": "Technical Director",
+        "image": "/images/Team/mrikulesh_minhas.jpg"
+      }
+    ],
+    "ELECTRONICS & DAQ": [
+      {
+        "name": "Tejas Kothiyal",
+        "role": "Electronics Lead",
+        "image": "/images/Team/tejas_kothiyal.jpg"
+      },
+      {
+        "name": "Pratham Sharma",
+        "role": "Data Acquisition Lead",
+        "image": "/images/Team/pratham_sharma.jpg"
+      },
+      {
+        "name": "Mannat Goyal",
+        "role": "Data Acquisition Engineer",
+        "image": "/images/Team/mannat_goyal.jpg"
+      },
+      {
+        "name": "Tanishq Sahu",
+        "role": "Data Acquisition Engineer",
+        "image": "/images/Team/tanishq_sahu.jpg"
+      },
+      {
+        "name": "Yash Tanwar",
+        "role": "Data Acquisition Engineer",
+        "image": "/images/Team/yash_tanwar.jpg"
+      },
+      {
+        "name": "Kanishka Sharma",
+        "role": "Data Acquisition Engineer",
+        "image": "/images/Team/kanishka_sharma.jpg"
+      },
+      {
+        "name": "Kushagra Jain",
+        "role": "Electronics Engineer",
+        "image": "/images/Team/kushagra_jain.jpg"
+      },
+      {
+        "name": "Vedant Shri Agarwal",
+        "role": "Data Acquisition Engineer",
+        "image": "/images/Team/vedant_shri_agarwal.jpg"
+      }
+    ],
+    "VEHICLE DYNAMICS": [
+      {
+        "name": "Sanidhiya Gupta",
+        "role": "Vehicle Dynamics Lead",
+        "image": "/images/Team/sanidhiya_gupta.jpg"
+      },
+      {
+        "name": "Avin Sachdeva",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/avin_sachdeva.jpg"
+      },
+      {
+        "name": "Arshjeet Singh",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/arshjeet_singh.jpg"
+      },
+      {
+        "name": "Ayush Yadav",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/ayush_yadav.jpg"
+      },
+      {
+        "name": "Sanchit Jagdeo",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/sanchit_jagdeo.jpg"
+      },
+      {
+        "name": "Singh Aditee Jiutbandhan",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/singh_aditee.jpg"
+      },
+      {
+        "name": "Vikhyat Hari",
+        "role": "Vehicle Dynamics Engineer",
+        "image": "/images/Team/vikhyat_hari.jpg"
+      }
+    ],
+    "POWERTRAIN & THERMAL": [
+      {
+        "name": "Mrikulesh Minhas",
+        "role": "Powertrain Lead",
+        "image": "/images/Team/mrikulesh_minhas.jpg"
+      },
+      {
+        "name": "Karanveer Singh",
+        "role": "Thermal Management",
+        "image": "/images/Team/karanveer_singh.jpg"
+      },
+      {
+        "name": "Aditya Sood",
+        "role": "Powertrain Engineer",
+        "image": "/images/Team/aditya_sood.jpg"
+      },
+      {
+        "name": "Aakanksha Jha",
+        "role": "Powertrain Engineer",
+        "image": "/images/Team/aakanksha_jha.jpg"
+      }
+    ],
+    "AERODYNAMICS": [
+      {
+        "name": "Akshay Malhan",
+        "role": "Aerodynamicist",
+        "image": "/images/Team/akshay_malhan.jpg"
+      },
+      {
+        "name": "Arnav Gautam",
+        "role": "Aerodynamicist",
+        "image": "/images/Team/arnav_gautam.jpg"
+      },
+      {
+        "name": "Gurkeerat Kang",
+        "role": "Aerodynamicist",
+        "image": "/images/Team/gurkeerat_kang.jpg"
+      },
+      {
+        "name": "Ishaan Sharma",
+        "role": "Aerodynamicist",
+        "image": "/images/Team/ishaan_sharma.jpg"
+      }
+    ],
+    "STRUCTURES": [
+      {
+        "name": "Raghav Garg",
+        "role": "Structures Lead",
+        "image": "/images/Team/raghav_garg.jpg"
+      },
+      {
+        "name": "Anirudh Tanikella",
+        "role": "Structures Engineer",
+        "image": "/images/Team/anirudh_tanikella.jpg"
+      },
+      {
+        "name": "Dravin Chawla",
+        "role": "Structures Engineer",
+        "image": "/images/Team/dravin_chawla.jpg"
+      },
+      {
+        "name": "Niladri Chakraborty",
+        "role": "Structures Engineer",
+        "image": "/images/Team/niladri_chakraborty.jpg"
+      },
+      {
+        "name": "Ansh Lamba",
+        "role": "Structures Engineer",
+        "image": "/images/Team/ansh_lamba.jpg"
+      },
+      {
+        "name": "Aviral Tyagi",
+        "role": "Structures Engineer",
+        "image": "/images/Team/aviral_tyagi.jpg"
+      },
+      {
+        "name": "Divyam Talreja",
+        "role": "Structures Engineer",
+        "image": "/images/Team/divyam_talreja.jpg"
+      },
+      {
+        "name": "Harnoor Singh Virdi",
+        "role": "Structures Engineer",
+        "image": "/images/Team/harnoor_singh_virdi.jpg"
+      },
+      {
+        "name": "Saransh Bansal",
+        "role": "Structures Engineer",
+        "image": "/images/Team/saransh_bansal.jpg"
+      },
+      {
+        "name": "Viraaz Singh Gill",
+        "role": "Structures Engineer",
+        "image": "/images/Team/viraaz_singh_gill.jpg"
+      }
+    ]
+  }
 }

@@ -3234,7 +3234,7 @@
     ]
   },
   "2024": {
-    "": [
+    "Team Leaders": [
       {
         "name": "Ishant Sachdev",
         "role": "Captain",
@@ -3258,6 +3258,26 @@
       {
         "name": "Aditya Kumar Singh",
         "role": "Team Manager",
+        "image": ""
+      },
+      {
+        "name": "Dhruv Prasher",
+        "role": "Structures Head",
+        "image": ""
+      },
+      {
+        "name": "Vishesh Chahar",
+        "role": "Powertrain lead",
+        "image": ""
+      },
+      {
+        "name": "Aryan Gupta",
+        "role": "Electronics and DAQ Lead",
+        "image": ""
+      },
+      {
+        "name": "Mivaan Kumar V",
+        "role": "Vehicle Dynamics Lead",
         "image": ""
       }
     ],
@@ -3411,7 +3431,7 @@
     ]
   },
   "2025": {
-    "": [
+    "Team Leaders": [
       {
         "name": "Pranav Bansal",
         "role": "Team Captain",
@@ -3420,6 +3440,21 @@
       {
         "name": "Devanshu Sharma",
         "role": "Technical Director",
+        "image": ""
+      },
+      {
+        "name": "Tanmay Wasson",
+        "role": "Powertrain Lead",
+        "image": ""
+      },
+      {
+        "name": "Akhilesh Kumar",
+        "role": "Drivetrain Lead",
+        "image": ""
+      },
+      {
+        "name": "Pranav Gupta",
+        "role": "Electronics Head",
         "image": ""
       }
     ],
