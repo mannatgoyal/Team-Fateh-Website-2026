@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Linkedin, Zap, Wind, ShieldAlert, FileKey, Cpu, Activity, Hexagon, ScanLine } from "lucide-react";
+import { Linkedin, Zap, Wind, ShieldAlert, FileKey, Cpu, Activity, Hexagon, ScanLine, Compass } from "lucide-react";
 
 interface TeamMember {
     name: string;
@@ -30,6 +30,7 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
     const isElectronics = dept.includes("electronics");
     const isData = dept.includes("data");
     const isAuto = dept.includes("autonomous");
+    const isDesign = dept.includes("design");
 
     return (
         <motion.div
