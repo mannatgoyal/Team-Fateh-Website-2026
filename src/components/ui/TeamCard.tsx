@@ -39,10 +39,10 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
             viewport={{ once: true }}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.4 }}
-            className="group relative w-full flex flex-col items-center text-center p-8 bg-secondary/40 border border-white/5 hover:border-primary/50 transition-colors"
+            className="group relative w-full aspect-[3/4] overflow-hidden bg-secondary border border-white/5 hover:border-primary/50 transition-colors flex flex-col items-center justify-center p-6"
         >
-            {/* Image Container (Round) */}
-            <div className="relative w-48 h-48 mb-6 rounded-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 border border-white/10 group-hover:border-primary/50 shadow-lg">
+            {/* Round Image Container */}
+            <div className="relative w-3/4 aspect-square mb-4 rounded-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 border border-white/10 group-hover:border-primary/50 shadow-2xl z-20">
                 <Image
                     src={imgSrc}
                     alt={member.name}
@@ -52,16 +52,17 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                     onError={() => setImgSrc('/images/Team/placeholder.png')}
                 />
 
-                {/* Overlay Gradient */}
+                {/* Overlay inside image */}
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500" />
+            </div>
 
-                {/* ---------------- EASTER EGG LAYERS ---------------- */}
-
+            {/* ---------------- EASTER EGG LAYERS (Full Card) ---------------- */}
+            <div className="absolute inset-0 z-10 pointer-events-none">
                 {/* 1. Management: Classified Stamp */}
                 {isManagement && (
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                        <div className="border-4 border-red-600/80 text-red-600/80 px-2 py-1 font-display font-bold text-xl -rotate-12 tracking-widest uppercase backdrop-blur-[2px]">
-                            SECRET
+                        <div className="border-4 border-red-600/80 text-red-600/80 px-4 py-2 font-display font-bold text-3xl -rotate-12 tracking-widest uppercase backdrop-blur-sm">
+                            HQ CLEARANCE
                         </div>
                     </div>
                 )}
@@ -70,7 +71,7 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                 {isStructures && (
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-500 pointer-events-none mix-blend-overlay flex flex-wrap gap-1 justify-center content-center overflow-hidden">
                         {[...Array(40)].map((_, i) => (
-                            <Hexagon key={i} size={24} className="text-gray-400 opacity-20" />
+                            <Hexagon key={i} size={48} className="text-gray-400 opacity-20" />
                         ))}
                     </div>
                 )}
@@ -102,14 +103,15 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                         </div>
 
                         {/* Top Right Live Stats Box */}
-                        <div className="absolute top-2 right-2 border border-red-500/40 bg-black/60 backdrop-blur-sm p-1 text-[8px] font-mono text-red-400">
-                            <div className="flex justify-between gap-2"><span>P:</span><motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.3 }}>-1.2°</motion.span></div>
-                            <div className="flex justify-between gap-2"><span>R:</span><motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.5 }}>+0.4°</motion.span></div>
+                        <div className="absolute top-4 right-4 border border-red-500/40 bg-black/60 backdrop-blur-sm p-2 text-[10px] font-mono text-red-400">
+                            <div className="flex justify-between gap-4 mb-1"><span>STATUS:</span><span className="text-green-400 animate-pulse">NOMINAL</span></div>
+                            <div className="flex justify-between gap-4"><span>PITCH:</span><motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.3 }}>-1.2°</motion.span></div>
+                            <div className="flex justify-between gap-4"><span>ROLL:</span><motion.span animate={{ opacity: [1, 0.5, 1] }} transition={{ repeat: Infinity, duration: 0.5 }}>+0.4°</motion.span></div>
                         </div>
 
                         {/* Bottom Left G-Meter Text */}
-                        <div className="absolute bottom-2 left-2 text-red-500 font-mono text-[10px] font-bold tracking-widest flex items-center gap-1 bg-black/50 px-1 py-0.5 border-l border-red-500">
-                            <Activity size={10} className="animate-pulse" /> LAT: 2.1G
+                        <div className="absolute bottom-24 left-4 text-red-500 font-mono text-xs font-bold tracking-widest flex items-center gap-2 bg-black/50 px-2 py-1 border-l-2 border-red-500">
+                            <Activity size={14} className="animate-pulse" /> LAT: 2.1G
                         </div>
 
                         {/* Scanning Horizons */}
@@ -142,14 +144,14 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                 {/* 5. Powertrain: Heat/Combustion Element */}
                 {isPowertrain && (
                     <div className="absolute inset-0 bg-gradient-to-t from-orange-600/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-screen">
-                        <Zap className="absolute top-4 right-4 text-orange-400 animate-pulse" size={20} fill="currentColor" />
+                        <Zap className="absolute top-4 right-4 text-orange-400 animate-pulse" size={24} fill="currentColor" />
                     </div>
                 )}
 
                 {/* 6. Electronics: PCB Traces */}
                 {isElectronics && (
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-[url('/images/grid.png')] bg-cover mix-blend-overlay">
-                        <Cpu className="absolute top-4 right-4 text-green-400 animate-pulse" size={20} />
+                        <Cpu className="absolute top-4 right-4 text-green-400 animate-pulse" size={24} />
                         <div className="absolute bottom-1/2 left-0 w-full h-[1px] bg-green-500/50 shadow-[0_0_5px_rgba(74,222,128,0.8)]" />
                         <div className="absolute top-0 left-1/3 w-[1px] h-full bg-green-500/50 shadow-[0_0_5px_rgba(74,222,128,0.8)]" />
                     </div>
@@ -157,26 +159,26 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
 
                 {/* 7. Data Acquisition: Live Telemetry */}
                 {isData && (
-                    <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none font-mono text-[8px] text-cyan-400 space-y-1">
+                    <div className="absolute top-6 left-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none font-mono text-xs text-cyan-400 space-y-1">
                         {[...Array(5)].map((_, i) => (
                             <motion.div
                                 key={i}
-                                initial={{ opacity: 0, x: -10 }}
+                                initial={{ opacity: 0, x: -20 }}
                                 whileHover={{ opacity: 1, x: 0 }}
                                 transition={{ delay: i * 0.1, duration: 0.2 }}
                                 className="flex items-center gap-2"
                             >
-                                <div className="w-1 h-1 bg-cyan-400 rounded-full animate-ping" />
+                                <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-ping" />
                                 <div>
                                     <span className="opacity-50">0x{Math.floor(Math.random() * 1000).toString(16)} </span>
-                                    <ScanLine size={10} className="inline mr-1" /> DATA
+                                    <ScanLine size={14} className="inline mr-1" /> ACTIVE FEED
                                 </div>
                             </motion.div>
                         ))}
                     </div>
                 )}
 
-                {/* 8. Autonomous: LiDAR Bounding Boxes */}
+                {/* 8. Autonomous Systems: LiDAR Scan */}
                 {isAuto && (
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                         <ScanLine className="absolute top-4 right-4 text-fuchsia-500 animate-pulse" size={24} />
@@ -189,7 +191,7 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                     </div>
                 )}
 
-                {/* 8. Chief Design Engineer: CAD Blueprint */}
+                {/* 9. Chief Design Engineer: CAD Blueprint */}
                 {isDesign && (
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-blue-950/80 mix-blend-hard-light overflow-hidden">
                         {/* Blueprint Grid */}
@@ -206,7 +208,7 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                         >
-                            <Compass className="text-blue-400 opacity-60 w-24 h-24" />
+                            <Compass className="text-blue-400 opacity-60 w-32 h-32" />
                         </motion.div>
                         {/* Measurement Lines */}
                         <motion.div
@@ -215,25 +217,29 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
                             transition={{ duration: 1 }}
                             className="absolute top-8 left-4 h-[1px] bg-blue-400/80"
                         />
-                        <div className="absolute top-4 left-4 text-blue-300 font-mono text-[8px]">
-                            <span className="animate-pulse">DRAW MODE</span><br />
-                            X: 231.4<br />
+                        <div className="absolute top-4 left-4 text-blue-300 font-mono text-[10px]">
+                            <span className="animate-pulse">DRAWING MODE</span><br />
+                            X: 231.42<br />
+                            Y: 89.21<br />
+                            Z: 14.05<br />
                             SCALE: 1:1
                         </div>
                     </div>
                 )}
 
-                {/* ---------------- END EASTER EGGS ---------------- */}
+                {/* Bottom Gradient for text readability */}
+                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-background via-background/80 to-transparent" />
             </div>
+            {/* ---------------- END EASTER EGGS ---------------- */}
 
-            {/* Content (Below Image) */}
-            <div className="w-full">
-                <p className={`font-mono text-xs uppercase tracking-widest mb-2
+            {/* Content (Text Below Image) */}
+            <div className="relative z-20 w-full mt-auto flex flex-col items-center">
+                <p className={`font-mono text-[10px] uppercase tracking-widest mb-2 text-center
                     ${isElectronics || isData ? "text-green-400" : isAero ? "text-blue-400" : isAuto ? "text-fuchsia-400" : "text-primary"}
                 `}>
                     {member.role}
                 </p>
-                <h3 className="text-xl font-display font-medium text-white mb-4 leading-snug">
+                <h3 className="text-xl font-display font-medium text-white mb-4 text-center">
                     {member.name}
                 </h3>
 
@@ -252,7 +258,7 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
             </div>
 
             {/* Decorative Corner */}
-            <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-primary/0 group-hover:border-primary transition-all duration-300" />
+            <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-primary/0 group-hover:border-primary transition-all duration-300 z-30" />
         </motion.div>
     );
 }
