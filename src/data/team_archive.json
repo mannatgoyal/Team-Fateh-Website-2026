@@ -2312,21 +2312,14 @@
         "name": "Tushar",
         "role": "Choudhary (Vice Captain)",
         "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2022%2FTeam%20Leaders%2FTushar_Choudhary(Vice%20Captain).png?alt=media"
-      }
-    ],
-    "Chief Design Engineer": [
+      },
       {
         "name": "Saliq Shah",
-        "role": "Chief Design Engineer",
+        "role": "Chief Engineer",
         "image": "/images/Team/special_mention/saliq_shah.png"
       }
     ],
     "Aerodynamics": [
-      {
-        "name": "Achyut",
-        "role": "Sharma",
-        "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2022%2FAerodynamics%2FAchyut_Sharma.png?alt=media"
-      },
       {
         "name": "Japjot",
         "role": "Singh",
@@ -2531,11 +2524,6 @@
         "name": "Nilesh",
         "role": "Arora",
         "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2022%2FEngine%2FNilesh_Arora.png?alt=media"
-      },
-      {
-        "name": "Sarthak",
-        "role": "Goel",
-        "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2022%2FEngine%2FSarthak_Goel.png?alt=media"
       },
       {
         "name": "Vishesh",
@@ -2787,11 +2775,6 @@
         "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2023%2FTeam%20Leaders%2FRevaant_Nandan%20-Team%20Captain.png?alt=media"
       },
       {
-        "name": "Sarthak",
-        "role": "Goel - Engine Lead",
-        "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2023%2FTeam%20Leaders%2FSarthak_Goel%20-%20Engine%20Lead.png?alt=media"
-      },
-      {
         "name": "Vurna",
         "role": "Raghuvanshi - Brakes Lead",
         "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2023%2FTeam%20Leaders%2FVurna_Raghuvanshi%20-%20Brakes%20Lead.png?alt=media"
@@ -2800,12 +2783,10 @@
         "name": "Yash",
         "role": "Awasthi - Electronics and Data Acquisition Lead",
         "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2023%2FTeam%20Leaders%2FYash_Awasthi%20-%20Electronics%20and%20Data%20Acquisition%20Lead.png?alt=media"
-      }
-    ],
-    "Chief Design Engineer": [
+      },
       {
         "name": "Saliq Shah",
-        "role": "Chief Design Engineer",
+        "role": "Chief Engineer",
         "image": "/images/Team/special_mention/saliq_shah.png"
       }
     ],
@@ -3139,11 +3120,6 @@
         "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2023%2FPowertrain%2FNilesh_Arora.png?alt=media"
       },
       {
-        "name": "Sarthak",
-        "role": "Goel - Engine Lead",
-        "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2023%2FPowertrain%2FSarthak_Goel%20-%20Engine%20Lead.png?alt=media"
-      },
-      {
         "name": "Vishesh",
         "role": "Chahar",
         "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2023%2FPowertrain%2FVishesh_Chahar.png?alt=media"
@@ -3279,12 +3255,10 @@
         "name": "Mivaan Kumar V",
         "role": "Vehicle Dynamics Lead",
         "image": ""
-      }
-    ],
-    "Chief Design Engineer": [
+      },
       {
         "name": "Saliq Shah",
-        "role": "Chief Design Engineer",
+        "role": "Chief Engineer",
         "image": "/images/Team/special_mention/saliq_shah.png"
       }
     ],
@@ -3456,12 +3430,10 @@
         "name": "Pranav Gupta",
         "role": "Electronics Head",
         "image": ""
-      }
-    ],
-    "Chief Design Engineer": [
+      },
       {
         "name": "Saliq Shah",
-        "role": "Chief Design Engineer",
+        "role": "Chief Engineer",
         "image": "/images/Team/special_mention/saliq_shah.png"
       }
     ],
