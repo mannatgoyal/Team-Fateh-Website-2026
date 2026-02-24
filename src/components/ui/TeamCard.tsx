@@ -22,7 +22,7 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
     const dept = department.toLowerCase();
 
     // The 8 Departments
-    const isManagement = dept.includes("management");
+    const isManagement = member.role.toLowerCase().includes("captain") || member.role.toLowerCase().includes("manager");
     const isStructures = dept.includes("structures");
     const isDynamics = dept.includes("dynamics");
     const isAero = dept.includes("aerodynamics");

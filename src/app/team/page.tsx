@@ -159,12 +159,14 @@ export default function TeamPage() {
                                     return (
                                         <div key={department} className="relative">
                                             {/* Department Header */}
-                                            <div className="flex items-center gap-6 mb-12">
-                                                <h2 className="text-2xl md:text-3xl font-mono font-light tracking-widest uppercase shrink-0">
-                                                    {department.replace(/_/g, " ")}
-                                                </h2>
-                                                <div className="h-[1px] w-full bg-white/10" />
-                                            </div>
+                                            {department.trim() !== "" && (
+                                                <div className="flex items-center gap-6 mb-12">
+                                                    <h2 className="text-2xl md:text-3xl font-mono font-light tracking-widest uppercase shrink-0">
+                                                        {department.replace(/_/g, " ")}
+                                                    </h2>
+                                                    <div className="h-[1px] w-full bg-white/10" />
+                                                </div>
+                                            )}
 
                                             {/* Member Grid */}
                                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
