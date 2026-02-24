@@ -3213,5 +3213,175 @@
         "image": "https://firebasestorage.googleapis.com/v0/b/website-fateh.appspot.com/o/team%2F2023%2FTeam_2023.jpg?alt=media"
       }
     ]
+  },
+  "2024": {
+    "": [
+      {
+        "name": "Ishant Sachdev",
+        "role": "Captain",
+        "image": ""
+      },
+      {
+        "name": "Avlok Jindal",
+        "role": "Vice Captain",
+        "image": ""
+      },
+      {
+        "name": "Japjot Singh",
+        "role": "Technical Director",
+        "image": ""
+      },
+      {
+        "name": "Abhimanyu Dadlani",
+        "role": "Manufacturing Head",
+        "image": ""
+      },
+      {
+        "name": "Aditya Kumar Singh",
+        "role": "Team Manager",
+        "image": ""
+      }
+    ],
+    "Structures": [
+      {
+        "name": "Dhruv Prasher",
+        "role": "Structures Head",
+        "image": ""
+      },
+      {
+        "name": "Pranav Bansal",
+        "role": "Structures",
+        "image": ""
+      },
+      {
+        "name": "Harsh Rayal",
+        "role": "Structures",
+        "image": ""
+      },
+      {
+        "name": "Prabhav Pathania",
+        "role": "Structures",
+        "image": ""
+      },
+      {
+        "name": "Paarth Garg",
+        "role": "Structures",
+        "image": ""
+      }
+    ],
+    "Powertrain": [
+      {
+        "name": "Vishesh Chahar",
+        "role": "Powertrain lead",
+        "image": ""
+      },
+      {
+        "name": "Nilesh Arora",
+        "role": "Powertrain",
+        "image": ""
+      },
+      {
+        "name": "Devanshu Sharma",
+        "role": "Powertrain",
+        "image": ""
+      },
+      {
+        "name": "Akhilesh Kumar",
+        "role": "Powertrain",
+        "image": ""
+      },
+      {
+        "name": "Samrath Singh",
+        "role": "Powertrain",
+        "image": ""
+      },
+      {
+        "name": "Mrikulesh Minhas",
+        "role": "Powertrain",
+        "image": ""
+      }
+    ],
+    "EV Powertrain": [
+      {
+        "name": "Harpuneet Singh",
+        "role": "EV Powertrain",
+        "image": ""
+      }
+    ],
+    "Electronics & DAQ": [
+      {
+        "name": "Aryan Gupta",
+        "role": "Electronics and DAQ Lead",
+        "image": ""
+      },
+      {
+        "name": "Pranav Gupta",
+        "role": "Electronics & DAQ",
+        "image": ""
+      },
+      {
+        "name": "Divyanshu Agrawal",
+        "role": "Electronics & DAQ",
+        "image": ""
+      },
+      {
+        "name": "Jobanpreet Brar",
+        "role": "Electronics & DAQ",
+        "image": ""
+      },
+      {
+        "name": "Pratham Sharma",
+        "role": "Electronics & DAQ",
+        "image": ""
+      },
+      {
+        "name": "Tejas Kothiyal",
+        "role": "Electronics & DAQ",
+        "image": ""
+      }
+    ],
+    "Suspension and Steering": [
+      {
+        "name": "Anjali Verma",
+        "role": "Suspension and Steering",
+        "image": ""
+      },
+      {
+        "name": "Shivangi",
+        "role": "Suspension and Steering",
+        "image": ""
+      },
+      {
+        "name": "Pranav Gupta",
+        "role": "Suspension and Steering",
+        "image": ""
+      },
+      {
+        "name": "Sanidhiya Gupta",
+        "role": "Suspension and Steering",
+        "image": ""
+      }
+    ],
+    "Vehicle Dynamics": [
+      {
+        "name": "Mivaan Kumar V",
+        "role": "Vehicle Dynamics Lead",
+        "image": ""
+      }
+    ],
+    "Brakes": [
+      {
+        "name": "Anugya Sharma",
+        "role": "Brakes",
+        "image": ""
+      }
+    ],
+    "Aerodynamics": [
+      {
+        "name": "Kushagra Sharma",
+        "role": "Aerodynamics",
+        "image": ""
+      }
+    ]
   }
 }
