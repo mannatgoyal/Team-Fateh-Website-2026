@@ -3383,5 +3383,139 @@
         "image": ""
       }
     ]
+  },
+  "2025": {
+    "": [
+      {
+        "name": "Pranav Bansal",
+        "role": "Team Captain",
+        "image": ""
+      },
+      {
+        "name": "Devanshu Sharma",
+        "role": "Technical Director",
+        "image": ""
+      }
+    ],
+    "Structures": [
+      {
+        "name": "Anirudh Tanikella",
+        "role": "Structures",
+        "image": ""
+      },
+      {
+        "name": "Dravin Chawla",
+        "role": "Structures",
+        "image": ""
+      },
+      {
+        "name": "Niladri Chakraborty",
+        "role": "Structures",
+        "image": ""
+      },
+      {
+        "name": "Paarth Garg",
+        "role": "Structures",
+        "image": ""
+      },
+      {
+        "name": "Raghav Garg",
+        "role": "Structures Engineer",
+        "image": ""
+      }
+    ],
+    "Powertrain": [
+      {
+        "name": "Tanmay Wasson",
+        "role": "Powertrain Lead",
+        "image": ""
+      },
+      {
+        "name": "Akhilesh Kumar",
+        "role": "Drivetrain Lead",
+        "image": ""
+      },
+      {
+        "name": "Aditya Sood",
+        "role": "Powertrain",
+        "image": ""
+      },
+      {
+        "name": "Karanveer Singh",
+        "role": "Powertrain",
+        "image": ""
+      },
+      {
+        "name": "Mrikulesh Minhas",
+        "role": "Powertrain",
+        "image": ""
+      }
+    ],
+    "Electronics & DAQ": [
+      {
+        "name": "Pranav Gupta",
+        "role": "Electronics Head",
+        "image": ""
+      },
+      {
+        "name": "Aryan Sadana",
+        "role": "Electronics and DAQ",
+        "image": ""
+      },
+      {
+        "name": "Mannat Goyal",
+        "role": "Electronics and DAQ",
+        "image": ""
+      },
+      {
+        "name": "Pratham Sharma",
+        "role": "Electronics and DAQ",
+        "image": ""
+      },
+      {
+        "name": "Ridhi Gupta",
+        "role": "Electronics and DAQ",
+        "image": ""
+      },
+      {
+        "name": "Tejas Kothiyal",
+        "role": "Electronics and DAQ",
+        "image": ""
+      },
+      {
+        "name": "Yash tanwar",
+        "role": "Electronics and DAQ",
+        "image": ""
+      }
+    ],
+    "Vehicle Dynamics": [
+      {
+        "name": "Avin Sachdeva",
+        "role": "Vehicle Dynamics Engineer",
+        "image": ""
+      },
+      {
+        "name": "Pranav Gupta",
+        "role": "Vehicle Dynamics Engineer",
+        "image": ""
+      },
+      {
+        "name": "Sanidhiya Gupta",
+        "role": "Vehicle Dynamics Engineer",
+        "image": ""
+      }
+    ],
+    "Aerodynamics": [
+      {
+        "name": "Akshay Malhan",
+        "role": "Aerodynamicist",
+        "image": ""
+      },
+      {
+        "name": "Arnav Gautam",
+        "role": "Aerodynamicist",
+        "image": ""
+      }
+    ]
   }
 }
