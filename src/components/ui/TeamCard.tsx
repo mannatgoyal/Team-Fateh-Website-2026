@@ -30,7 +30,7 @@ export default function TeamCard({ member, department = "" }: TeamCardProps) {
     const isElectronics = dept.includes("electronics");
     const isData = dept.includes("data");
     const isAuto = dept.includes("autonomous");
-    const isDesign = dept.includes("design");
+    const isDesign = member.role.toLowerCase().includes("design");
 
     return (
         <motion.div
