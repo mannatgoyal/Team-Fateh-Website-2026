@@ -4,6 +4,7 @@ import Hero from "@/components/layout/Hero";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Marquee from "@/components/visuals/Marquee";
+import sponsorsData from "@/data/sponsors.json";
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode, delay?: number }) => (
   <motion.div
@@ -96,6 +97,36 @@ export default function Home() {
                 <p className="font-mono text-sm text-slate-500 uppercase tracking-widest">Goal: Victory</p>
               </div>
             </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Chapter 3.5: Sponsors */}
+      <section className="py-32 bg-background border-t border-secondary/5 relative overflow-hidden">
+        <div className="absolute inset-0 bg-primary/5 blur-3xl rounded-full scale-150 opacity-20 pointer-events-none" />
+        <div className="container mx-auto px-6 max-w-6xl text-center relative z-10">
+          <FadeIn>
+            <h3 className="text-primary font-mono text-sm tracking-widest mb-4 uppercase">Industry Support</h3>
+            <h2 className="text-3xl md:text-5xl font-display font-bold mb-16 text-slate-200">
+              BACKED BY <span className="text-primary">LEADERS</span>
+            </h2>
+
+            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-90 mb-16">
+              {[...(sponsorsData.title || []), ...(sponsorsData.platinum || []), ...(sponsorsData.gold || [])].slice(0, 8).map((sponsor, idx) => (
+                <div key={idx} className="relative h-12 md:h-16 w-32 md:w-48 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+                  <img
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    className="object-contain max-h-full max-w-full"
+                  />
+                </div>
+              ))}
+            </div>
+
+            <Link href="/partners" className="group px-8 py-4 border border-secondary/30 text-slate-300 font-bold uppercase tracking-widest hover:bg-secondary hover:text-white transition-colors inline-flex items-center gap-3 rounded-md">
+              <span>View All Partners</span>
+              <span className="group-hover:translate-x-1 transition-transform">→</span>
+            </Link>
           </FadeIn>
         </div>
       </section>

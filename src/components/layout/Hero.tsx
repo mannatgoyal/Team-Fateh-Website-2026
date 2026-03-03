@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
+import sponsorsData from "@/data/sponsors.json";
 
 export default function Hero() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -78,6 +79,25 @@ export default function Hero() {
                             <span>View Our Cars</span>
                             <span className="group-hover:translate-x-1 transition-transform">→</span>
                         </Link>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 1, duration: 0.8 }}
+                        className="mt-16 pt-8 border-t border-white/10"
+                    >
+                        <p className="text-[10px] text-white/50 font-mono tracking-widest uppercase mb-6 drop-shadow-md">Principal Partners</p>
+                        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                            {[...(sponsorsData.title || []), ...(sponsorsData.platinum || [])].map((sponsor, idx) => (
+                                <img
+                                    key={idx}
+                                    src={sponsor.logo}
+                                    alt={sponsor.name}
+                                    className="h-8 md:h-12 object-contain opacity-70 hover:opacity-100 drop-shadow-lg transition-all duration-300"
+                                />
+                            ))}
+                        </div>
                     </motion.div>
                 </motion.div>
             </motion.div>

@@ -34,10 +34,10 @@ export default function SponsorBelt() {
                 {marqueeSponsors.map((sponsor, idx) => (
                     <div
                         key={`${sponsor.name}-${idx}`}
-                        className="flex items-center justify-center px-8 md:px-16 opacity-50 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 cursor-default"
+                        className="flex items-center justify-center px-8 md:px-16 opacity-80 hover:opacity-100 transition-opacity cursor-default"
                         title={sponsor.name}
                     >
-                        <div className="relative h-6 md:h-8 w-24 md:w-32 flex items-center justify-center">
+                        <div className="relative h-8 md:h-12 w-32 md:w-40 flex items-center justify-center">
                             <Image
                                 src={sponsor.logo}
                                 alt={sponsor.name}
