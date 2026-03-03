@@ -17,7 +17,7 @@ export default function Hero() {
     const scaleImg = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
 
     return (
-        <div ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden bg-background">
+        <div ref={containerRef} className="relative min-h-[100svh] py-24 md:py-0 flex items-center justify-center overflow-hidden bg-background">
             {/* Background Image with Parallax */}
             <motion.div
                 style={{ scale: scaleImg }}
@@ -85,7 +85,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1, duration: 0.8 }}
-                        className="mt-16 pt-8 border-t border-white/10"
+                        className="mt-10 pt-6 border-t border-white/10"
                     >
                         <p className="text-[10px] text-white/50 font-mono tracking-widest uppercase mb-6 drop-shadow-md">Principal Partners</p>
                         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
