@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Flag } from "lucide-react";
+import Photobooth from "./Photobooth";
 
-type TeamType = "mclaren" | "ferrari" | "mercedes" | "williams" | "redbull" | null;
+type TeamType = "mclaren" | "ferrari" | "mercedes" | "williams" | "redbull" | "photobooth" | null;
 
 export default function EasterEggController() {
     const [activeTeam, setActiveTeam] = useState<TeamType>(null);
@@ -38,6 +39,9 @@ export default function EasterEggController() {
             } else if (keyBuffer.includes("max") || keyBuffer.includes("redbull")) {
                 setActiveTeam("redbull");
                 keyBuffer = "";
+            } else if (keyBuffer.includes("cheese") || keyBuffer.includes("photo")) {
+                setActiveTeam("photobooth");
+                keyBuffer = "";
             }
         };
 
@@ -45,15 +49,19 @@ export default function EasterEggController() {
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, []);
 
-    // Auto-dismiss after 4 seconds
+    // Auto-dismiss after 4 seconds for F1 teams, but DO NOT auto-dismiss the photobooth
     useEffect(() => {
-        if (activeTeam) {
+        if (activeTeam && activeTeam !== "photobooth") {
             const timer = setTimeout(() => setActiveTeam(null), 4000);
             return () => clearTimeout(timer);
         }
     }, [activeTeam]);
 
     if (!activeTeam) return null;
+
+    if (activeTeam === "photobooth") {
+        return <Photobooth isOpen={true} onClose={() => setActiveTeam(null)} />;
+    }
 
     const teamConfig = {
         mclaren: { color: "#FF8000", msg: "PIASTRI IS FASTER. 🏎️💨", tagline: "PAPAYA RULES" },
