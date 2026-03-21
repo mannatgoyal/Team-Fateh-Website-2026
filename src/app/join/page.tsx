@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Cpu, Wind, Cog, Megaphone, Layers, Activity } from "lucide-react";
+import { ArrowRight, Cpu, Wind, Cog, Megaphone, Layers, Activity, Globe, Briefcase } from "lucide-react";
 import Link from "next/link";
 
 const positions = [
@@ -10,49 +10,63 @@ const positions = [
         department: "Electronics",
         icon: <Wind size={32} />,
         type: "Technical",
-        description: "Design and testing Control and Safety Systems for the car."
+        description: "Develop and test vehicle electronic systems."
     },
     {
         title: "High Voltage Engineer",
         department: "Powertrain",
         icon: <Cpu size={32} />,
         type: "Technical",
-        description: "Work on the Accumulator Management System (AMS) and Tractive System integration."
+        description: "Manage battery and powertrain systems."
     },
     {
         title: "Graphic Designer",
         department: "Management",
         icon: <Megaphone size={32} />,
         type: "Non-Technical",
-        description: "Designing the teamfateh merchandise and social media posts."
+        description: "Create visual content and team branding."
     },
     {
         title: "Structures Engineer",
         department: "Structures",
         icon: <Cog size={32} />,
         type: "Technical",
-        description: "Design, analyze, and optimize the overarching structural components of the chassis."
+        description: "Design and analyze the vehicle chassis structure."
     },
     {
         title: "Composites Engineer",
         department: "Composites",
         icon: <Layers size={32} />,
         type: "Technical",
-        description: "Develop lightweight carbon fiber components and advanced manufacturing processes."
+        description: "Build lightweight carbon fiber parts."
     },
     {
         title: "Suspension Engineer",
         department: "Suspension",
         icon: <Activity size={32} />,
         type: "Technical",
-        description: "Optimize vehicle dynamics, suspension kinematics, and damping characteristics."
+        description: "Optimize vehicle dynamics and handling."
     },
     {
         title: "Aerodynamics Engineer",
         department: "Aerodynamics",
         icon: <Wind size={32} />,
         type: "Technical",
-        description: "Simulate and design aero kits using CFD for maximum downforce and cooling."
+        description: "Design aero packages for overall performance."
+    },
+    {
+        title: "Marketing & Outreach",
+        department: "Management",
+        icon: <Globe size={32} />,
+        type: "Non-Technical",
+        description: "Drive team marketing, events, and community outreach."
+    },
+    {
+        title: "Sponsorships Manager",
+        department: "Management",
+        icon: <Briefcase size={32} />,
+        type: "Non-Technical",
+        description: "Secure and manage corporate partnerships and team funding."
     }
 ];
 

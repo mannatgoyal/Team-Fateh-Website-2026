@@ -36,7 +36,7 @@ export default function GalleryPage() {
                     animate={{ opacity: 1, y: 0 }}
                     className="text-6xl md:text-8xl font-display font-bold mb-8"
                 >
-                    THE <span className="text-primary">ARCHIVE</span>
+                    THE <span className="text-primary">HIGHLIGHTS</span>
                 </motion.h1>
 
                 {/* Filters */}

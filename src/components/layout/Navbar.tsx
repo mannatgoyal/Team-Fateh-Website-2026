@@ -11,7 +11,7 @@ const navLinks = [
     { name: "Our Story", href: "/about" },
     { name: "The Car", href: "/cars" },
     { name: "Team", href: "/team" },
-    { name: "Archive", href: "/gallery" },
+    { name: "Highlights", href: "/gallery" },
     { name: "Blogs", href: "/blog" },
     { name: "Partners", href: "/partners" },
     { name: "Contact", href: "/contact" },
