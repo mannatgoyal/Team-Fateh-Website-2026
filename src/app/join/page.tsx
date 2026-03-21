@@ -114,7 +114,7 @@ export default function JoinPage() {
                                 {role.description}
                             </p>
 
-                            <Link href="/contact" className="inline-flex items-center gap-2 font-bold text-secondary group-hover:gap-4 transition-all">
+                            <Link href={`/apply?role=${encodeURIComponent(role.title)}`} className="inline-flex items-center gap-2 font-bold text-secondary group-hover:gap-4 transition-all">
                                 Apply Now <ArrowRight size={18} className="text-primary" />
                             </Link>
                         </motion.div>
@@ -129,8 +129,8 @@ export default function JoinPage() {
                         <p className="text-slate-300 mb-8 max-w-xl mx-auto">
                             We are always looking for talent. If you think you have what it takes, send us your portfolio/CV directly.
                         </p>
-                        <Link href="/contact" className="px-8 py-4 bg-white text-secondary font-bold rounded-lg hover:bg-primary hover:text-white transition-colors">
-                            Contact Us
+                        <Link href="/apply?role=General%20%2F%20Spontaneous%20Application" className="px-8 py-4 bg-white text-secondary font-bold rounded-lg hover:bg-primary hover:text-white transition-colors">
+                            Apply Now
                         </Link>
                     </div>
                 </div>
