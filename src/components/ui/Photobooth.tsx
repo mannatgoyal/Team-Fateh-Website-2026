@@ -72,90 +72,92 @@ export default function Photobooth({ isOpen, onClose }: { isOpen: boolean, onClo
         // Reset transform for overlays
         ctx.setTransform(1, 0, 0, 1, 0, 0);
 
-        // 2. High-Contrast Cinematic Filter
-        ctx.fillStyle = "rgba(0, 5, 10, 0.4)"; // Deep cinematic dark tint
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        // Dynamic Vignette Radial Gradient
+        // 2. F1-Style "Broadcast" Aesthetic Filter
+        // Soft vignette to focus the center
         const gradient = ctx.createRadialGradient(
-            canvas.width / 2, canvas.height / 2, canvas.height * 0.2,
+            canvas.width / 2, canvas.height / 2, canvas.height * 0.4,
             canvas.width / 2, canvas.height / 2, canvas.height * 0.9
         );
-        gradient.addColorStop(0, "transparent");
-        gradient.addColorStop(1, "rgba(255, 165, 31, 0.35)"); // Primary color heavy edge tint
+        gradient.addColorStop(0, "rgba(0, 0, 0, 0)");
+        gradient.addColorStop(1, "rgba(0, 0, 20, 0.6)"); // Dark blue/black edge
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        // 3. Tech/Racing Grid Pattern Overlay
-        ctx.strokeStyle = "rgba(255, 255, 255, 0.05)";
+        // High contrast / slight warm tint
+        ctx.globalCompositeOperation = "overlay";
+        ctx.fillStyle = "rgba(255, 120, 0, 0.05)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.globalCompositeOperation = "source-over";
+
+        // Thin elegant frame line
+        ctx.strokeStyle = "rgba(255, 255, 255, 0.15)";
         ctx.lineWidth = 1;
-        const gridSize = 60;
-        for (let x = 0; x < canvas.width; x += gridSize) {
+        ctx.strokeRect(40, 40, canvas.width - 80, canvas.height - 80);
+
+        // 3. F1 Broadcast Style Graphic (Bottom Left)
+        const drawTextOverlays = () => {
+            const startX = 60;
+            const startY = canvas.height - 120;
+
+            // F1 slanted block
+            ctx.fillStyle = "#E63946"; // Fateh red/primary
             ctx.beginPath();
-            ctx.moveTo(x, 0);
-            ctx.lineTo(x, canvas.height);
-            ctx.stroke();
-        }
-        for (let y = 0; y < canvas.height; y += gridSize) {
+            ctx.moveTo(startX, startY);
+            ctx.lineTo(startX + 300, startY);
+            ctx.lineTo(startX + 280, startY + 45);
+            ctx.lineTo(startX - 20, startY + 45);
+            ctx.fill();
+
+            // Slashed accent
+            ctx.fillStyle = "#ffffff";
             ctx.beginPath();
-            ctx.moveTo(0, y);
-            ctx.lineTo(canvas.width, y);
+            ctx.moveTo(startX + 310, startY);
+            ctx.lineTo(startX + 330, startY);
+            ctx.lineTo(startX + 310, startY + 45);
+            ctx.lineTo(startX + 290, startY + 45);
+            ctx.fill();
+
+            // Text inside block
+            ctx.fillStyle = "#ffffff";
+            ctx.font = "bold 28px 'Inter', 'Helvetica Neue', sans-serif";
+            ctx.textAlign = "left";
+            ctx.fillText("TEAM FATEH", startX + 15, startY + 32);
+
+            // Subtitle exactly below block
+            ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+            ctx.font = "600 16px 'Inter', monospace, sans-serif";
+            ctx.letterSpacing = "2px";
+            ctx.fillText("ENGINEERING CORE // 2026", startX, startY + 70);
+
+            // Top right corner target minimal UI
+            ctx.fillStyle = "rgba(255, 255, 255, 0.4)";
+            ctx.fillRect(canvas.width - 60, 60, 20, 2);
+            ctx.fillRect(canvas.width - 60, 60, 2, 20);
+            
+            // Subtle Grid
+            ctx.strokeStyle = "rgba(255, 255, 255, 0.03)";
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(canvas.width / 2, 0);
+            ctx.lineTo(canvas.width / 2, canvas.height);
             ctx.stroke();
-        }
+            ctx.beginPath();
+            ctx.moveTo(0, canvas.height / 2);
+            ctx.lineTo(canvas.width, canvas.height / 2);
+            ctx.stroke();
+        };
 
-        // 4. Bold Frame Border (like a racing ticket or polaroid)
-        const framePadding = 20;
-        ctx.strokeStyle = "rgba(255, 165, 31, 0.8)"; // Primary orange
-        ctx.lineWidth = 8;
-        ctx.strokeRect(framePadding, framePadding, canvas.width - (framePadding * 2), canvas.height - (framePadding * 2));
-
-        // Inner white accent border
-        ctx.strokeStyle = "rgba(255, 255, 255, 0.3)";
-        ctx.lineWidth = 2;
-        ctx.strokeRect(framePadding + 8, framePadding + 8, canvas.width - ((framePadding + 8) * 2), canvas.height - ((framePadding + 8) * 2));
-
-        // 5. Draw Branding Overlays
         const logo = new Image();
         logo.src = "/images/logoW.png";
 
-        const drawTextOverlays = () => {
-            // Draw Text Top Left with heavy, premium styling
-            const textPaddingY = framePadding + 60;
-            const textPaddingX = framePadding + 40;
-
-            ctx.shadowColor = "rgba(0, 0, 0, 0.9)";
-            ctx.shadowBlur = 15;
-            ctx.fillStyle = "#FFA51F"; // Primary color
-            ctx.font = "italic 900 48px 'Impact', 'Arial Black', sans-serif";
-            ctx.textAlign = "left";
-            ctx.fillText("TEAM FATEH RACING", textPaddingX, textPaddingY);
-
-            ctx.fillStyle = "#FFFFFF";
-            ctx.font = "bold 24px monospace";
-            ctx.shadowBlur = 10;
-            ctx.fillText("THAPAR INSTITUTE // PATIALA // EST. 2008", textPaddingX, textPaddingY + 40);
-
-            // Decorative elements
-            ctx.fillStyle = "rgba(255, 165, 31, 0.8)";
-            ctx.fillRect(textPaddingX, textPaddingY + 60, Math.floor(canvas.width * 0.15), 4);
-
-            // Timecode / Data (simulated telemetry)
-            ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
-            ctx.font = "16px monospace";
-            const dateStr = new Date().toISOString().replace('T', ' ').substring(0, 19) + "Z";
-            ctx.fillText(`SYS.REC: ${dateStr}`, textPaddingX, textPaddingY + 90);
-            ctx.fillText(`LOC: 30.3564° N, 76.3647° E`, textPaddingX, textPaddingY + 115);
-        };
-
         logo.onload = () => {
-            const logoWidth = 240; // Slightly larger logo
+            const logoWidth = 140; // Smaller, more tasteful
             const aspectRatio = logo.naturalHeight / logo.naturalWidth;
             const logoHeight = logoWidth * aspectRatio;
-            const padding = framePadding + 30;
-
-            ctx.shadowColor = "rgba(0,0,0,0.8)";
-            ctx.shadowBlur = 20;
-            ctx.drawImage(logo, canvas.width - logoWidth - padding, canvas.height - logoHeight - padding, logoWidth, logoHeight);
+            
+            ctx.globalAlpha = 0.9;
+            ctx.drawImage(logo, canvas.width - logoWidth - 60, canvas.height - logoHeight - 60, logoWidth, logoHeight);
+            ctx.globalAlpha = 1.0;
 
             drawTextOverlays();
 
