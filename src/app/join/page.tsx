@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Cpu, Wind, Cog, Megaphone } from "lucide-react";
+import { ArrowRight, Cpu, Wind, Cog, Megaphone, Layers, Activity } from "lucide-react";
 import Link from "next/link";
 
 const positions = [
@@ -26,6 +26,34 @@ const positions = [
         type: "Non-Technical",
         description: "Designing the teamfateh merchandise and social media posts."
     },
+    {
+        title: "Structures Engineer",
+        department: "Structures",
+        icon: <Cog size={32} />,
+        type: "Technical",
+        description: "Design, analyze, and optimize the overarching structural components of the chassis."
+    },
+    {
+        title: "Composites Engineer",
+        department: "Composites",
+        icon: <Layers size={32} />,
+        type: "Technical",
+        description: "Develop lightweight carbon fiber components and advanced manufacturing processes."
+    },
+    {
+        title: "Suspension Engineer",
+        department: "Suspension",
+        icon: <Activity size={32} />,
+        type: "Technical",
+        description: "Optimize vehicle dynamics, suspension kinematics, and damping characteristics."
+    },
+    {
+        title: "Aerodynamics Engineer",
+        department: "Aerodynamics",
+        icon: <Wind size={32} />,
+        type: "Technical",
+        description: "Simulate and design aero kits using CFD for maximum downforce and cooling."
+    }
 ];
 
 export default function JoinPage() {
