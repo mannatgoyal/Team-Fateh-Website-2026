@@ -42,27 +42,35 @@ export default function Navbar() {
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex gap-8 items-center">
+                <div className="hidden lg:flex gap-6 items-center">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-mono tracking-widest hover:text-primary transition-colors uppercase text-foreground"
+                            className="text-[10px] xl:text-xs font-mono tracking-widest hover:text-primary transition-colors uppercase text-foreground whitespace-nowrap"
                         >
                             {link.name}
                         </Link>
                     ))}
-                    <Link
-                        href="/join"
-                        className="px-6 py-2 border border-foreground/20 hover:bg-foreground hover:text-background transition-all font-mono text-xs uppercase tracking-widest text-foreground"
-                    >
-                        Join Us
-                    </Link>
+                    <div className="flex items-center gap-3 border-l border-foreground/10 pl-6 ml-2">
+                        <Link
+                            href="/join"
+                            className="px-4 py-2 border border-foreground/20 hover:bg-foreground hover:text-background transition-all font-mono text-[10px] xl:text-xs uppercase tracking-widest text-foreground whitespace-nowrap"
+                        >
+                            Join
+                        </Link>
+                        <Link
+                            href="/explore-sponsorship"
+                            className="px-4 py-2 bg-primary text-black hover:bg-primary/80 transition-all font-mono text-[10px] xl:text-xs uppercase tracking-widest font-bold whitespace-nowrap"
+                        >
+                            Explore Partnership
+                        </Link>
+                    </div>
                 </div>
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden text-foreground"
+                    className="lg:hidden text-foreground"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? <X /> : <Menu />}
@@ -74,7 +82,7 @@ export default function Navbar() {
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="absolute top-full left-0 w-full bg-background border-b border-foreground/10 flex flex-col items-center py-8 gap-6 md:hidden shadow-lg"
+                    className="absolute top-full left-0 w-full bg-background border-b border-foreground/10 flex flex-col items-center py-8 gap-6 lg:hidden shadow-lg"
                 >
                     {navLinks.map((link) => (
                         <Link
@@ -86,6 +94,22 @@ export default function Navbar() {
                             {link.name}
                         </Link>
                     ))}
+                    <div className="flex flex-col gap-4 mt-6 w-full px-12">
+                        <Link
+                            href="/explore-sponsorship"
+                            className="w-full text-center px-6 py-4 bg-primary text-black font-mono tracking-widest font-bold uppercase rounded-sm"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Explore Partnership
+                        </Link>
+                        <Link
+                            href="/join"
+                            className="w-full text-center px-6 py-4 border border-foreground/20 text-foreground font-mono tracking-widest uppercase rounded-sm"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Join Us
+                        </Link>
+                    </div>
                 </motion.div>
             )}
         </nav>
