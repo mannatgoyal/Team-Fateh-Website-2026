@@ -126,7 +126,7 @@ const cars = [
         season: "2024",
         name: "TUFF 16",
         innovation: "5-Axis Machined Uprights",
-        outcome: "Final Combustion Evolution",
+        outcome: "Final Combustion Evolution. FS Italy Competitor. 2nd Runner Up - Formula Bharat 2024",
         description: "Ultimate IC refinement. Custom carbon sheets and precision-machined uprights.",
         image: "/images/History/tuff_16.png",
         stats: { weight: "185kg", power: "42 BHP", accel: "N/A" }
@@ -135,7 +135,7 @@ const cars = [
         season: "2025",
         name: "TUFF 17",
         innovation: "First EV – Emrax 228 (285.6V)",
-        outcome: "Formula Bharat 2025 & SUPRA SAE 2025",
+        outcome: "Formula Bharat 2025. 2nd Runner Up - SUPRA SAE 2025",
         description: "Team Fateh’s first electric vehicle. Powered by Emrax 228 motor with 285.6V accumulator — the official EV transition.",
         image: "/images/History/tuff_17.png",
         stats: { weight: "EV Platform", power: "Emrax 228", accel: "N/A" }
