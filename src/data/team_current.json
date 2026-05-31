@@ -74,30 +74,15 @@
         "image": "/images/Team/avin_sachdeva.jpg"
       },
       {
-        "name": "Arshjeet Singh",
-        "role": "Vehicle Dynamics Engineer",
-        "image": "/images/Team/arshjeet_singh.jpg"
-      },
-      {
         "name": "Ayush Yadav",
         "role": "Vehicle Dynamics Engineer",
         "image": "/images/Team/ayush_yadav.jpg"
-      },
-      {
-        "name": "Sanchit Jagdeo",
-        "role": "Vehicle Dynamics Engineer",
-        "image": "/images/Team/sanchit_jagdeo.jpg"
       },
       {
         "name": "Singh Aditee Jiutbandhan",
         "role": "Vehicle Dynamics Engineer",
         "image": "/images/Team/singh_aditee.jpg"
       },
-      {
-        "name": "Vikhyat Hari",
-        "role": "Vehicle Dynamics Engineer",
-        "image": "/images/Team/vikhyat_hari.jpg"
-      }
     ],
     "AERODYNAMICS": [
       {
@@ -109,11 +94,6 @@
         "name": "Arnav Gautam",
         "role": "Aerodynamics Lead",
         "image": "/images/Team/arnav_gautam.jpg"
-      },
-      {
-        "name": "Gurkeerat Kang",
-        "role": "Aerodynamicist",
-        "image": "/images/Team/gurkeerat_kang.jpg"
       },
       {
         "name": "Ishaan Sharma",
@@ -132,12 +112,6 @@
         "role": "Thermal Management Lead",
         "image": "/images/Team/karanveer_singh.jpg"
       },
-      {
-        "name": "Aakanksha Jha",
-        "role": "Powertrain Engineer",
-        "image": "/images/Team/aakanksha_jha.jpg"
-      }
-    ],
     "ELECTRONICS": [
       {
         "name": "Aryan Sadana",
@@ -166,12 +140,6 @@
         "role": "Data Acquisition Engineer",
         "image": "/images/Team/kanishka_sharma.jpg"
       },
-      {
-        "name": "Vedant Shri Agarwal",
-        "role": "Data Acquisition Engineer",
-        "image": "/images/Team/vedant_shri_agarwal.jpg"
-      }
-    ],
     "Autonomous Systems": [
       {
         "name": "Yash Tanwar",
@@ -283,11 +251,6 @@
         "role": "Electronics Engineer",
         "image": "/images/Team/kushagra_jain.jpg"
       },
-      {
-        "name": "Vedant Shri Agarwal",
-        "role": "Data Acquisition Engineer",
-        "image": "/images/Team/vedant_shri_agarwal.jpg"
-      }
     ],
     "VEHICLE DYNAMICS": [
       {
@@ -301,30 +264,15 @@
         "image": "/images/Team/avin_sachdeva.jpg"
       },
       {
-        "name": "Arshjeet Singh",
-        "role": "Vehicle Dynamics Engineer",
-        "image": "/images/Team/arshjeet_singh.jpg"
-      },
-      {
         "name": "Ayush Yadav",
         "role": "Vehicle Dynamics Engineer",
         "image": "/images/Team/ayush_yadav.jpg"
-      },
-      {
-        "name": "Sanchit Jagdeo",
-        "role": "Vehicle Dynamics Engineer",
-        "image": "/images/Team/sanchit_jagdeo.jpg"
       },
       {
         "name": "Singh Aditee Jiutbandhan",
         "role": "Vehicle Dynamics Engineer",
         "image": "/images/Team/singh_aditee.jpg"
       },
-      {
-        "name": "Vikhyat Hari",
-        "role": "Vehicle Dynamics Engineer",
-        "image": "/images/Team/vikhyat_hari.jpg"
-      }
     ],
     "POWERTRAIN & THERMAL": [
       {
@@ -342,11 +290,6 @@
         "role": "Powertrain Engineer",
         "image": "/images/Team/aditya_sood.jpg"
       },
-      {
-        "name": "Aakanksha Jha",
-        "role": "Powertrain Engineer",
-        "image": "/images/Team/aakanksha_jha.jpg"
-      }
     ],
     "AERODYNAMICS": [
       {
@@ -358,11 +301,6 @@
         "name": "Arnav Gautam",
         "role": "Aerodynamicist",
         "image": "/images/Team/arnav_gautam.jpg"
-      },
-      {
-        "name": "Gurkeerat Kang",
-        "role": "Aerodynamicist",
-        "image": "/images/Team/gurkeerat_kang.jpg"
       },
       {
         "name": "Ishaan Sharma",
