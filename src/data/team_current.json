@@ -45,26 +45,6 @@
         "name": "Karanveer Singh",
         "role": "Thermal Management Lead",
         "image": "/images/Team/karanveer_singh.jpg"
-      },
-      {
-        "name": "Aryan Sadana",
-        "role": "Electronics (LV) Lead",
-        "image": "/images/Team/aryan_sadana.jpg"
-      },
-      {
-        "name": "Ridhi Gupta",
-        "role": "Electronics (LV) Lead",
-        "image": "/images/Team/ridhi_gupta.jpg"
-      },
-      {
-        "name": "Tanishq Sahu",
-        "role": "Data Acquisition Lead",
-        "image": "/images/Team/tanishq_sahu.jpg"
-      },
-      {
-        "name": "Yash Tanwar",
-        "role": "Autonomous Lead",
-        "image": "/images/Team/yash_tanwar.jpg"
       }
     ],
     "VEHICLE DYNAMICS": [
@@ -115,16 +95,6 @@
     ],
     "ELECTRONICS": [
       {
-        "name": "Aryan Sadana",
-        "role": "Electronics (LV) Lead",
-        "image": "/images/Team/aryan_sadana.jpg"
-      },
-      {
-        "name": "Ridhi Gupta",
-        "role": "Electronics (LV) Lead",
-        "image": "/images/Team/ridhi_gupta.jpg"
-      },
-      {
         "name": "Kushagra Jain",
         "role": "Electronics Engineer",
         "image": "/images/Team/kushagra_jain.jpg"
@@ -132,21 +102,9 @@
     ],
     "Data Acquisition": [
       {
-        "name": "Tanishq Sahu",
-        "role": "Data Acquisition Lead",
-        "image": "/images/Team/tanishq_sahu.jpg"
-      },
-      {
         "name": "Kanishka Sharma",
         "role": "Data Acquisition Engineer",
         "image": "/images/Team/kanishka_sharma.jpg"
-      }
-    ],
-    "Autonomous Systems": [
-      {
-        "name": "Yash Tanwar",
-        "role": "Autonomous Lead",
-        "image": "/images/Team/yash_tanwar.jpg"
       }
     ],
     "STRUCTURES": [
@@ -166,11 +124,6 @@
         "image": "/images/Team/ansh_lamba.jpg"
       },
       {
-        "name": "Aviral Tyagi",
-        "role": "Structures Engineer",
-        "image": "/images/Team/aviral_tyagi.jpg"
-      },
-      {
         "name": "Divyam Talreja",
         "role": "Structures Engineer",
         "image": "/images/Team/divyam_talreja.jpg"
@@ -179,11 +132,6 @@
         "name": "Harnoor Singh Virdi",
         "role": "Structures Engineer",
         "image": "/images/Team/harnoor_singh_virdi.jpg"
-      },
-      {
-        "name": "Saransh Bansal",
-        "role": "Structures Engineer",
-        "image": "/images/Team/saransh_bansal.jpg"
       },
       {
         "name": "Viraaz Singh Gill",
@@ -332,11 +280,6 @@
         "image": "/images/Team/ansh_lamba.jpg"
       },
       {
-        "name": "Aviral Tyagi",
-        "role": "Structures Engineer",
-        "image": "/images/Team/aviral_tyagi.jpg"
-      },
-      {
         "name": "Divyam Talreja",
         "role": "Structures Engineer",
         "image": "/images/Team/divyam_talreja.jpg"
@@ -345,11 +288,6 @@
         "name": "Harnoor Singh Virdi",
         "role": "Structures Engineer",
         "image": "/images/Team/harnoor_singh_virdi.jpg"
-      },
-      {
-        "name": "Saransh Bansal",
-        "role": "Structures Engineer",
-        "image": "/images/Team/saransh_bansal.jpg"
       },
       {
         "name": "Viraaz Singh Gill",
