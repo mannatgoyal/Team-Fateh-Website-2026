@@ -13,8 +13,8 @@ export default function TelemetryHUD() {
     // Smooth out velocity
     const smoothVelocity = useSpring(scrollVelocity, { damping: 50, stiffness: 400 });
 
-    // Map velocity to RPM (0 - 100%)
-    const rpm = useTransform(smoothVelocity, [0, 2000], [0, 100]);
+    // Map velocity to RPM (0 - 100%) - clamp so negative velocities (scrolling upwards) don't produce negative or extrapolated values
+    const rpm = useTransform(smoothVelocity, [0, 2000], [0, 100], { clamp: true });
 
     const [currentRpm, setCurrentRpm] = useState(0);
     const [speed, setSpeed] = useState(0);
@@ -22,16 +22,17 @@ export default function TelemetryHUD() {
 
     useEffect(() => {
         return rpm.on("change", (latest) => {
-            const absRpm = Math.abs(latest);
-            setCurrentRpm(Math.min(absRpm, 100));
-            setSpeed(Math.floor(absRpm * 3)); // Fake speed
+            // When scrolling upwards (negative velocity), show 0 or remain still
+            const validRpm = latest > 0 ? Math.min(latest, 100) : 0;
+            setCurrentRpm(validRpm);
+            setSpeed(Math.floor(validRpm * 3)); // Fake speed
 
             // Fake Gear Logic
-            if (absRpm === 0) setGear("N");
-            else if (absRpm < 20) setGear("1");
-            else if (absRpm < 40) setGear("2");
-            else if (absRpm < 60) setGear("3");
-            else if (absRpm < 80) setGear("4");
+            if (validRpm === 0) setGear("N");
+            else if (validRpm < 20) setGear("1");
+            else if (validRpm < 40) setGear("2");
+            else if (validRpm < 60) setGear("3");
+            else if (validRpm < 80) setGear("4");
             else setGear("5");
         });
     }, [rpm]);

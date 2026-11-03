@@ -4,27 +4,32 @@
       {
         "name": "Niladri Chakraborty",
         "role": "Team Captain",
-        "image": "/images/Team/niladri_chakraborty.jpg"
+        "image": "/images/Team/niladri_chakraborty.jpg",
+        "linkedin": "https://www.linkedin.com/in/niladri-chakraborty-b29639286/"
       },
       {
         "name": "Anirudh Tanikella",
         "role": "Vice Captain & Structures Lead",
-        "image": "/images/Team/anirudh_tanikella.jpg"
+        "image": "/images/Team/anirudh_tanikella.jpg",
+        "linkedin": "https://www.linkedin.com/in/anirudh-tanikella-329542303/"
       },
       {
         "name": "Mannat Goyal",
         "role": "Team Manager",
-        "image": "/images/Team/mannat_goyal.jpg"
+        "image": "/images/Team/mannat_goyal.jpg",
+        "linkedin": "https://www.linkedin.com/in/mannat-goyal28/"
       },
       {
         "name": "Dravin Chawla",
         "role": "Technical Director & Manufacturing Lead",
-        "image": "/images/Team/dravin_chawla.jpg"
+        "image": "/images/Team/dravin_chawla.jpg",
+        "linkedin": "https://www.linkedin.com/in/dravinchawla/"
       },
       {
         "name": "Aditya Sood",
         "role": "Technical Director & Powertrain Lead",
-        "image": "/images/Team/aditya_sood.jpg"
+        "image": "/images/Team/aditya_sood.jpg",
+        "linkedin": "https://www.linkedin.com/in/aditya-sood-7ab731284/"
       },
       {
         "name": "Avin Sachdeva",
@@ -85,7 +90,8 @@
       {
         "name": "Aditya Sood",
         "role": "Technical Director & Powertrain Lead",
-        "image": "/images/Team/aditya_sood.jpg"
+        "image": "/images/Team/aditya_sood.jpg",
+        "linkedin": "https://www.linkedin.com/in/aditya-sood-7ab731284/"
       },
       {
         "name": "Karanveer Singh",
@@ -111,12 +117,14 @@
       {
         "name": "Dravin Chawla",
         "role": "Technical Director & Manufacturing Lead",
-        "image": "/images/Team/dravin_chawla.jpg"
+        "image": "/images/Team/dravin_chawla.jpg",
+        "linkedin": "https://www.linkedin.com/in/dravinchawla/"
       },
       {
         "name": "Anirudh Tanikella",
         "role": "Vice Captain & Structures Lead",
-        "image": "/images/Team/anirudh_tanikella.jpg"
+        "image": "/images/Team/anirudh_tanikella.jpg",
+        "linkedin": "https://www.linkedin.com/in/anirudh-tanikella-329542303/"
       },
       {
         "name": "Ansh Lamba",
@@ -179,7 +187,8 @@
       {
         "name": "Mannat Goyal",
         "role": "Data Acquisition Engineer",
-        "image": "/images/Team/mannat_goyal.jpg"
+        "image": "/images/Team/mannat_goyal.jpg",
+        "linkedin": "https://www.linkedin.com/in/mannat-goyal28/"
       },
       {
         "name": "Tanishq Sahu",
@@ -238,7 +247,8 @@
       {
         "name": "Aditya Sood",
         "role": "Powertrain Engineer",
-        "image": "/images/Team/aditya_sood.jpg"
+        "image": "/images/Team/aditya_sood.jpg",
+        "linkedin": "https://www.linkedin.com/in/aditya-sood-7ab731284/"
       }
     ],
     "AERODYNAMICS": [
@@ -262,17 +272,20 @@
       {
         "name": "Anirudh Tanikella",
         "role": "Structures Engineer",
-        "image": "/images/Team/anirudh_tanikella.jpg"
+        "image": "/images/Team/anirudh_tanikella.jpg",
+        "linkedin": "https://www.linkedin.com/in/anirudh-tanikella-329542303/"
       },
       {
         "name": "Dravin Chawla",
         "role": "Structures Engineer",
-        "image": "/images/Team/dravin_chawla.jpg"
+        "image": "/images/Team/dravin_chawla.jpg",
+        "linkedin": "https://www.linkedin.com/in/dravinchawla/"
       },
       {
         "name": "Niladri Chakraborty",
         "role": "Structures Engineer",
-        "image": "/images/Team/niladri_chakraborty.jpg"
+        "image": "/images/Team/niladri_chakraborty.jpg",
+        "linkedin": "https://www.linkedin.com/in/niladri-chakraborty-b29639286/"
       },
       {
         "name": "Ansh Lamba",
